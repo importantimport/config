@@ -45,8 +45,8 @@ Custom
 import ii from '@importantimport/eslint-config'
 
 export default [
-  ...ii.configs.js,
-  ...ii.configs.ts,
+  ii.configs.js,
+  ii.configs.ts,
   {
     // your config here
   }
