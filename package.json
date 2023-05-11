@@ -1,6 +1,7 @@
 {
   "name": "@importantimport/config",
   "type": "module",
+  "private": true,
   "scripts": {
     "lint": "eslint .",
     "format": "eslint . --fix"
