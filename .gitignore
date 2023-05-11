@@ -1,0 +1,17 @@
+# dist
+dist
+dist-ssr
+*.local
+
+# dependencies
+node_modules
+
+# logs
+logs
+*.log
+.turbo
+pnpm-debug.log*
+vite.config.ts.timestamp*
+
+# macOS-specific files
+.DS_Store
