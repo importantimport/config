@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "lint": "eslint .",
-    "format": "eslint . --fix"
+    "format": "eslint . --fix",
+    "changeset": "changeset",
+    "release": "pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1",
     "@importantimport/eslint-config": "workspace:^",
     "@types/eslint": "^8.37.0",
     "@types/node": "^18.16.0",
