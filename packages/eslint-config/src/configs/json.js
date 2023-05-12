@@ -2,7 +2,7 @@ import jsoncPlugin from 'eslint-plugin-jsonc'
 import jsoncParser from 'jsonc-eslint-parser'
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const shared = {
+const shared = {
   languageOptions: {
     // @ts-expect-error
     parser: jsoncParser,
