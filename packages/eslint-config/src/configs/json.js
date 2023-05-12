@@ -17,7 +17,7 @@ export const shared = {
 export const json = {
   ...shared,
   files: ['**/*.json'],
-  ignores: ['tsconfig.json', 'tsconfig-*.json'],
+  ignores: ['**/{j,t}sconfig.json', '**/{j,t}sconfig-*.json'],
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
@@ -33,7 +33,7 @@ export const json = {
 /** @type {import('eslint').Linter.FlatConfig} */
 export const jsonc = {
   ...shared,
-  files: ['**/*.jsonc', '**/tsconfig.json', '**/tsconfig-*.json'],
+  files: ['**/*.jsonc', '**/{j,t}sconfig.json', '**/{j,t}sconfig-*.json'],
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
