@@ -30,11 +30,16 @@ export default config
 
 ### VSCode
 
+Add `svelte` to `eslint.validate`.
+
 ```diff
 // .vscode/settings.json
 {
   "eslint.validate": [
     "javascript",
+    "json",
+    "jsonc",
+    "json5"
 +   "svelte"
   ]
 }

@@ -54,3 +54,22 @@ export default [
   }
 ]
 ```
+
+### VSCode
+
+Recommended settings:
+
+```json
+// .vscode/settings.json
+{
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.validate": ["javascript", "json", "jsonc", "json5"]
+}
+```
+
+It enables flat config, disables Prettier, auto-formats on save, and adds json to validate.
