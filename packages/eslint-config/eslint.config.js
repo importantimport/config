@@ -17,6 +17,7 @@ import globals from 'globals'
 // local
 import comments from './src/configs/comments.js'
 import { json, json5, jsonc, packageJson } from './src/configs/json.js'
+import markdown from './src/configs/markdown.js'
 import antfuRules from './src/rules/antfu.js'
 import masknetRules from './src/rules/masknet.js'
 import sortRules from './src/rules/sort.js'
@@ -137,6 +138,7 @@ export const configs = {
   json,
   json5,
   jsonc,
+  markdown,
   packageJson,
   ts,
 }
