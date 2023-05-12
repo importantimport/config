@@ -13,11 +13,18 @@ export const shared = {
   },
 }
 
+/** @type {string[]} */
+const jsoncFiles = [
+  '**/{j,t}sconfig.json',
+  '**/{j,t}sconfig-*.json',
+  '**/{j,t}sconfig.*.json',
+]
+
 /** @type {import('eslint').Linter.FlatConfig} */
 export const json = {
   ...shared,
   files: ['**/*.json'],
-  ignores: ['**/{j,t}sconfig.json', '**/{j,t}sconfig-*.json'],
+  ignores: jsoncFiles,
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
@@ -33,7 +40,7 @@ export const json = {
 /** @type {import('eslint').Linter.FlatConfig} */
 export const jsonc = {
   ...shared,
-  files: ['**/*.jsonc', '**/{j,t}sconfig.json', '**/{j,t}sconfig-*.json'],
+  files: jsoncFiles,
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
