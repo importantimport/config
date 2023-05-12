@@ -5,7 +5,7 @@ import eslintPluginPlugin from 'eslint-plugin-eslint-plugin'
 export default defineFlatConfig([
   ...config,
   {
-    files: ['./packages/eslint-config/**/*.js'],
+    files: ['./packages/eslint-config/**/*.js', './packages/eslint-config-*/**/*.js'],
     plugins: {
       'eslint-plugin': eslintPluginPlugin,
     },
