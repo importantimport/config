@@ -5,4 +5,5 @@
     "source.fixAll.eslint": true
   },
   "eslint.experimental.useFlatConfig": true,
+  "eslint.validate": ["javascript", "json", "jsonc", "json5"]
 }
