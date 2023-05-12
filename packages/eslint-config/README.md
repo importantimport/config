@@ -26,9 +26,7 @@ Simple
 
 ```js
 // eslint.config.js
-import config from '@importantimport/eslint-config'
-
-export default config
+export { default } from '@importantimport/eslint-config'
 ```
 
 Define

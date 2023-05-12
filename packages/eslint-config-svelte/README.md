@@ -23,9 +23,7 @@ pnpm add -D eslint @importantimport/eslint-config-svelte
 
 ```js
 // eslint.config.js
-import config from '@importantimport/eslint-config-svelte'
-
-export default config
+export { default } from '@importantimport/eslint-config-svelte'
 ```
 
 ### VSCode
