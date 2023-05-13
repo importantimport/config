@@ -1,5 +1,11 @@
 # @importantimport/eslint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- [`2a97802`](https://github.com/importantimport/config/commit/2a9780242817c07d76bece3ce16fb77cb59aee13) Thanks [@kwaa](https://github.com/kwaa)! - Support Regexp
+
 ## 0.0.2
 
 ### Patch Changes
