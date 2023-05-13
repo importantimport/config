@@ -72,14 +72,6 @@ const js = {
     ...sortRules,
     ...importantimportRules,
   },
-  settings: {
-    'import/parsers': {
-      espree: ['.js', '.mjs'],
-    },
-    'import/resolver': {
-      node: { extensions: ['.js', '.mjs'] },
-    },
-  },
 }
 
 /** @type {import('eslint').Linter.FlatConfig} */
@@ -101,24 +93,14 @@ const ts = {
     '@typescript-eslint': tsPlugin,
     'tsdoc': tsdocPlugin,
   },
+  // @ts-expect-error
   rules: {
     ...js.rules,
+    ...importPlugin.configs.typescript.rules,
     ...tsPlugin.configs.recommended.rules,
     // @ts-expect-error
     ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
     'tsdoc/syntax': 'warn',
-  },
-  settings: {
-    ...js.settings,
-    'import/parsers': {
-      espree: ['.js', '.mjs', '.ts', '.d.ts'],
-    },
-    'import/resolver': {
-      node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
-      typescript: {
-        extensions: ['.js', '.mjs', '.ts', '.d.ts'],
-      },
-    },
   },
 }
 
@@ -139,7 +121,7 @@ export const configs = {
   json5,
   jsonc,
   markdown,
-  markdownCodeBlock, 
+  markdownCodeBlock,
   packageJson,
   ts,
 }
