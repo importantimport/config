@@ -75,6 +75,14 @@ const js = {
     ...sortRules,
     ...importantimportRules,
   },
+  settings: {
+    'import/parsers': {
+      espree: ['.js', '.mjs'],
+    },
+    'import/resolver': {
+      node: { extensions: ['.js', '.mjs'] },
+    },
+  },
 }
 
 /** @type {import('eslint').Linter.FlatConfig} */
@@ -104,6 +112,18 @@ const ts = {
     // @ts-expect-error
     ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
     'tsdoc/syntax': 'warn',
+  },
+  settings: {
+    ...js.settings,
+    'import/parsers': {
+      espree: ['.js', '.mjs', '.ts', '.d.ts'],
+    },
+    'import/resolver': {
+      node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
+      typescript: {
+        extensions: ['.js', '.mjs', '.ts', '.d.ts'],
+      },
+    },
   },
 }
 
