@@ -7,6 +7,7 @@ import antfuPlugin from 'eslint-plugin-antfu'
 import * as importPlugin from 'eslint-plugin-import'
 import nPlugin from 'eslint-plugin-n'
 import promisePlugin from 'eslint-plugin-promise'
+import * as regexpPlugin from 'eslint-plugin-regexp'
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort'
 import sortKeysFixPlugin from 'eslint-plugin-sort-keys-fix'
 import tsdocPlugin from 'eslint-plugin-tsdoc'
@@ -51,6 +52,7 @@ const js = {
     'n': nPlugin,
     // @ts-expect-error
     'promise': promisePlugin,
+    'regexp': regexpPlugin,
     // @ts-expect-error
     'simple-import-sort': simpleImportSortPlugin,
     'sort-keys-fix': sortKeysFixPlugin,
@@ -62,6 +64,7 @@ const js = {
     ...jsConfig.configs.recommended.rules,
     // @ts-expect-error
     ...importPlugin.configs.recommended.rules,
+    ...regexpPlugin.configs.recommended.rules,
     ...unicornPlugin.configs.recommended.rules,
     // ...masknetPlugin.configs.recommended.rules,
     // local
