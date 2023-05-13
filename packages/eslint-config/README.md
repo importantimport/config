@@ -49,7 +49,7 @@ export default [
   ii.configs.ts,
   {
     // your config here
-  }
+  },
 ]
 ```
 
@@ -57,7 +57,7 @@ export default [
 
 Recommended settings:
 
-```json
+```jsonc
 // .vscode/settings.json
 {
   "prettier.enable": false,

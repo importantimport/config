@@ -16,8 +16,7 @@ pnpm add -D eslint @importantimport/eslint-config
 
 ```js
 // eslint.config.js
-import config from '@improtantimport/eslint-config'
-export default config
+export { default } from '@importantimport/eslint-config'
 ```
 
 ### Packages
