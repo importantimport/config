@@ -28,7 +28,7 @@ import unusedImportsRules from './src/rules/unused-imports.js'
 /** @type {import('eslint').Linter.FlatConfig} */
 const js = {
   files: ['**/*.{js,mjs}'],
-  ignores: ['coverage/*', 'dist/*', 'node_modules'],
+  ignores: ['coverage/*', 'dist/*', 'node_modules/*'],
   languageOptions: {
     globals: {
       ...globals.browser,
