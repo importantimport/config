@@ -1,4 +1,4 @@
-# @importantimport/eslint-config-svelte [![npm](https://img.shields.io/npm/v/@importantimport/eslint-config-svelte)](https://npmjs.com/package/@importantimport/eslint-config-svelte)
+# @importantimport/eslint-config-lit [![npm](https://img.shields.io/npm/v/@importantimport/eslint-config-lit)](https://npmjs.com/package/@importantimport/eslint-config-lit)
 
 An [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new) for [!mportantImport](https://github.com/importantimport).
 
