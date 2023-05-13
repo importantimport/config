@@ -1,0 +1,41 @@
+{
+  "name": "@importantimport/eslint-config-lit",
+  "type": "module",
+  "version": "0.0.3",
+  "description": "An ESLint Flat Config for !mportantImport.",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/config.git",
+    "directory": "packages/eslint-config-lit"
+  },
+  "bugs": "https://github.com/importantimport/config/issues",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "config"
+  ],
+  "exports": {
+    ".": {
+      "import": "./eslint.config.js",
+      "default": "./eslint.config.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./eslint.config.js",
+  "module": "./eslint.config.js",
+  "peerDependencies": {
+    "eslint": "^8.39.0"
+  },
+  "dependencies": {
+    "@importantimport/eslint-config": "workspace:^",
+    "eslint-plugin-lit": "^1.8.3",
+    "eslint-plugin-lit-a11y": "^2.4.1",
+    "eslint-plugin-wc": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.37.0",
+    "eslint": "^8.39.0"
+  }
+}
