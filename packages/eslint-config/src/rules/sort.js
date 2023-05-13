@@ -6,6 +6,7 @@ export default {
   'import/no-duplicates': 'error',
   'simple-import-sort/exports': 'error',
   'simple-import-sort/imports': 'error',
+  'sort-imports': 'off',
   'sort-keys-fix/sort-keys-fix': 'error',
   'sort-vars': 'error',
 }
