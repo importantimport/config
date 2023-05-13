@@ -6,7 +6,7 @@ export default {
   'unicorn/prevent-abbreviations': [
     'error',
     {
-      checkFileNames: false,
+      checkFilenames: false,
     },
   ],
 }
