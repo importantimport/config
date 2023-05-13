@@ -29,3 +29,13 @@ export default config
 <!-- | [`@importantimport/eslint-config-lit`](/packages/eslint-config-lit) | Library / Frameworks (Lit) | ✅ | - |
 | [`@importantimport/eslint-config-yaml`](/packages/eslint-config-yaml) | Formats (YAML) | - | - |
 | [`@importantimport/eslint-config-toml`](/packages/eslint-config-toml) | Formats (TOML) | - | - | -->
+
+### Developing
+
+ESLint Config does not have a build step.
+
+Just make the changes, and then pnpm link to the test environment:
+
+```bash
+pnpm link ../config/packages/eslint-config # or eslint-config-*
+```
