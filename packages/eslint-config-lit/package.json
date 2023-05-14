@@ -2,6 +2,7 @@
   "name": "@importantimport/eslint-config-lit",
   "type": "module",
   "version": "0.0.3",
+  "private": true,
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "WTFPL",
   "repository": {
