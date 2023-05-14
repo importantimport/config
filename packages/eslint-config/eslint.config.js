@@ -28,7 +28,7 @@ import unusedImportsRules from './src/rules/unused-imports.js'
 
 /** @type {import('eslint').Linter.FlatConfig} */
 const js = {
-  files: ['**/*.{js,mjs}'],
+  files: ['**/*.{js,mjs,jsx}'],
   ignores: ['coverage/*', 'dist/*', 'node_modules/*'],
   languageOptions: {
     globals: {
@@ -77,10 +77,10 @@ const js = {
   },
   settings: {
     'import/parsers': {
-      espree: ['.js', '.mjs'],
+      espree: ['.js', '.mjs', '.jsx'],
     },
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs'] },
+      node: { extensions: ['.js', '.mjs', '.jsx'] },
     },
   },
 }
@@ -88,7 +88,7 @@ const js = {
 /** @type {import('eslint').Linter.FlatConfig} */
 const ts = {
   ...js,
-  files: ['**/*.ts'],
+  files: ['**/*.ts?(x)'],
   languageOptions: {
     ...js.languageOptions,
     // @ts-expect-error
@@ -114,14 +114,13 @@ const ts = {
     'tsdoc/syntax': 'warn',
   },
   settings: {
-    ...js.settings,
     'import/parsers': {
-      espree: ['.js', '.mjs', '.ts', '.d.ts'],
+      espree: ['.js', '.mjs', '.jsx', '.ts', '.d.ts', '.tsx'],
     },
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
+      node: { extensions: ['.js', '.mjs', '.jsx', '.ts', '.d.ts', '.tsx'] },
       typescript: {
-        extensions: ['.js', '.mjs', '.ts', '.d.ts'],
+        extensions: ['.js', '.mjs', '.jsx', '.ts', '.d.ts', '.tsx'],
       },
     },
   },
