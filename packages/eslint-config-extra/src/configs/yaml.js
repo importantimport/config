@@ -4,6 +4,7 @@ import yamlPraser from 'yaml-eslint-parser'
 /** @type {import('eslint').Linter.FlatConfig} */
 export default {
   files: ['**/*.{yml,yaml}'],
+  ignores: ['**/pnpm-lock.yaml'],
   languageOptions: {
     parser: yamlPraser,
   },

@@ -24,7 +24,7 @@ const jsoncFiles = [
 export const json = {
   ...shared,
   files: ['**/*.json'],
-  ignores: jsoncFiles,
+  ignores: [...jsoncFiles, '**/package-lock.json'],
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
