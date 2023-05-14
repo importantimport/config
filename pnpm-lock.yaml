@@ -13,6 +13,9 @@ importers:
       '@importantimport/eslint-config':
         specifier: workspace:^
         version: link:packages/eslint-config
+      '@importantimport/eslint-config-extra':
+        specifier: workspace:^
+        version: link:packages/eslint-config-extra
       '@types/eslint':
         specifier: ^8.37.0
         version: 8.37.0
