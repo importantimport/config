@@ -40,7 +40,7 @@ export const json = {
 /** @type {import('eslint').Linter.FlatConfig} */
 export const jsonc = {
   ...shared,
-  files: jsoncFiles,
+  files: ['**/*.jsonc', ...jsoncFiles],
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
