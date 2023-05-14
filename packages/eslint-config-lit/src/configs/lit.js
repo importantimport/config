@@ -15,6 +15,7 @@ export const lit = {
     ...litA11yPlugin.configs.recommended.rules,
     ...wcPlugin.configs.recommended.rules,
     ...wcPlugin.configs['best-practice'].rules,
+    '@masknet/string-no-simple-template-literal': 'off',
     'class-methods-use-this': [
       'error',
       {
