@@ -23,11 +23,10 @@ export { default } from '@importantimport/eslint-config'
 
 | Package | Type | Basic Config Included | Basic Config Required |
 | - | - | - | - |
-| [`@importantimport/eslint-config`](/packages/eslint-config) | Basic Config (JS, JSON, TS) | - | - |
+| [`@importantimport/eslint-config`](/packages/eslint-config) | Basic Config (JS, JSON, TS, Markdown) | - | - |
 | [`@importantimport/eslint-config-svelte`](/packages/eslint-config-svelte) | Library / Frameworks (Svelte) | ✅ | - |
 | [`@importantimport/eslint-config-lit`](/packages/eslint-config-lit) | Library / Frameworks (Lit) | ✅ | - |
-<!-- | [`@importantimport/eslint-config-yaml`](/packages/eslint-config-yaml) | Formats (YAML) | - | - |
-| [`@importantimport/eslint-config-toml`](/packages/eslint-config-toml) | Formats (TOML) | - | - | -->
+| [`@importantimport/eslint-config-extra`](/packages/eslint-config-extra) | Extra Config (JSON Schema, YAML, TOML) | - | - |
 
 ### Developing
 
