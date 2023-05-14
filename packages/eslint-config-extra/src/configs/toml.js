@@ -11,6 +11,7 @@ export default {
     toml: tomlPlugin,
   },
   rules: {
+    ...tomlPlugin.configs.base.overrides[0].rules,
     ...tomlPlugin.configs.standard.rules,
   },
 }

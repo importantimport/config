@@ -12,6 +12,7 @@ export default {
     yml: yamlPlugin,
   },
   rules: {
+    ...yamlPlugin.configs.base.overrides[0].rules,
     ...yamlPlugin.configs.standard.rules,
   },
 }

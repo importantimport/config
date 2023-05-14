@@ -33,6 +33,7 @@ export const json = {
   },
   // @ts-expect-error
   rules: {
+    ...jsoncPlugin.configs.base.overrides[0].rules,
     ...jsoncPlugin.configs['recommended-with-json'].rules,
   },
 }
@@ -49,6 +50,7 @@ export const jsonc = {
   },
   // @ts-expect-error
   rules: {
+    ...jsoncPlugin.configs.base.overrides[0].rules,
     ...jsoncPlugin.configs['recommended-with-jsonc'].rules,
   },
 }
@@ -65,6 +67,7 @@ export const json5 = {
   },
   // @ts-expect-error
   rules: {
+    ...jsoncPlugin.configs.base.overrides[0].rules,
     ...jsoncPlugin.configs['recommended-with-json5'].rules,
   },
 }

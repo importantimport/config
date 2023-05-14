@@ -7,6 +7,7 @@ export default {
     'json-schema-validator': jsonSchemaValidatorPlugin,
   },
   rules: {
+    ...jsonSchemaValidatorPlugin.configs.base.overrides[0].rules,
     ...jsonSchemaValidatorPlugin.configs.recommended.rules,
   },
 }
