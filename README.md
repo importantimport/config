@@ -19,14 +19,27 @@ pnpm add -D eslint @importantimport/eslint-config
 export { default } from '@importantimport/eslint-config'
 ```
 
+```jsonc
+// .vscode/settings.json
+{
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.validate": ["javascript", "json", "jsonc", "json5"]
+}
+```
+
 ### Packages
 
 | Package | Type | Basic Config Included | Basic Config Required |
 | - | - | - | - |
 | [`@importantimport/eslint-config`](/packages/eslint-config) | Basic Config (JS, JSON, TS, Markdown) | - | - |
-| [`@importantimport/eslint-config-svelte`](/packages/eslint-config-svelte) | Library / Frameworks (Svelte) | ✅ | - |
-| [`@importantimport/eslint-config-lit`](/packages/eslint-config-lit) | Library / Frameworks (Lit) | ✅ | - |
 | [`@importantimport/eslint-config-extra`](/packages/eslint-config-extra) | Extra Config (JSON Schema, YAML, TOML) | - | - |
+| [`@importantimport/eslint-config-lit`](/packages/eslint-config-lit) | Library / Frameworks (Lit) | ✅ | - |
+| [`@importantimport/eslint-config-svelte`](/packages/eslint-config-svelte) | Library / Frameworks (Svelte) | ✅ | - |
 
 ### Developing
 
