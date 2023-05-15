@@ -1,7 +1,7 @@
 import commentsPlugin from '@eslint-community/eslint-plugin-eslint-comments'
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export default {
+export const comments = {
   plugins: {
     '@eslint-community/eslint-comments': commentsPlugin,
   },

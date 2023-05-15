@@ -167,10 +167,7 @@ export const packageJson = {
   },
 }
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
-  json,
-  jsonc,
-  json5,
-  packageJson,
-]
+export const jsoncPrettier = {
+  files: ['**/*.{json,jsonc,json5}'],
+  rules: jsoncPlugin.configs.prettier.rules,
+}
