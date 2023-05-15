@@ -1,0 +1,46 @@
+{
+  "name": "@importantimport/eslint-config-prettier",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "An ESLint Flat Config for !mportantImport.",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/config.git",
+    "directory": "packages/eslint-config-prettier"
+  },
+  "bugs": "https://github.com/importantimport/config/issues",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "config"
+  ],
+  "exports": {
+    ".": {
+      "import": "./eslint.config.js",
+      "default": "./eslint.config.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./eslint.config.js",
+  "module": "./eslint.config.js",
+  "peerDependencies": {
+    "@importantimport/eslint-config": "workspace:^",
+    "eslint": "^8.39.0"
+  },
+  "peerDependenciesMeta": {
+    "@importantimport/eslint-config": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "devDependencies": {
+    "@importantimport/eslint-config": "workspace:^",
+    "@types/eslint": "^8.37.0",
+    "eslint": "^8.39.0"
+  }
+}
