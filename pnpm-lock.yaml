@@ -135,6 +135,9 @@ importers:
       '@importantimport/eslint-config':
         specifier: workspace:^
         version: link:../eslint-config
+      '@importantimport/eslint-config-prettier':
+        specifier: workspace:^
+        version: link:../eslint-config-prettier
       eslint-plugin-lit:
         specifier: ^1.8.3
         version: 1.8.3(eslint@8.39.0)
@@ -176,6 +179,9 @@ importers:
       '@importantimport/eslint-config':
         specifier: workspace:^
         version: link:../eslint-config
+      '@importantimport/eslint-config-prettier':
+        specifier: workspace:^
+        version: link:../eslint-config-prettier
       eslint-plugin-svelte:
         specifier: ^2.28.0
         version: 2.28.0(eslint@8.39.0)

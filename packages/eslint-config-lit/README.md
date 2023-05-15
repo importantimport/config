@@ -17,7 +17,7 @@ An [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configurati
 ### Install
 
 ```bash
-pnpm add -D eslint @importantimport/eslint-config-lit
+pnpm add -D eslint @importantimport/eslint-config-lit prettier prettier-config-standard
 ```
 
 ### Config
@@ -25,4 +25,9 @@ pnpm add -D eslint @importantimport/eslint-config-lit
 ```js
 // eslint.config.js
 export { default } from '@importantimport/eslint-config-lit'
+```
+
+```jsonc
+// .prettierrc.json
+"prettier-config-standard"
 ```

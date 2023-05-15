@@ -53,6 +53,17 @@ export default [
 ]
 ```
 
+With Prettier
+
+```js
+import { configs, prettier } from '@importantimport/eslint-config'
+
+export default Object.values({
+  ...configs,
+  ...prettier,
+})
+```
+
 ### VSCode
 
 Recommended settings:

@@ -2,7 +2,7 @@ import yamlPlugin from 'eslint-plugin-yml'
 import yamlPraser from 'yaml-eslint-parser'
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export default {
+export const yaml = {
   files: ['**/*.{yml,yaml}'],
   ignores: ['**/pnpm-lock.yaml'],
   languageOptions: {
@@ -27,5 +27,14 @@ export default {
         pathPattern: '.*',
       },
     ],
+  },
+}
+
+/** @type {import('eslint').Linter.FlatConfig} */
+export const yamlPrettier = {
+  files: ['**/*.{yml,yaml}'],
+  ignores: ['**/pnpm-lock.yaml'],
+  rules: {
+    ...yamlPlugin.configs.prettier.rules,
   },
 }

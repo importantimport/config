@@ -2,7 +2,7 @@ import tomlPlugin from 'eslint-plugin-toml'
 import tomlPraser from 'toml-eslint-parser'
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export default {
+export const toml = {
   files: ['**/*.toml'],
   languageOptions: {
     parser: tomlPraser,

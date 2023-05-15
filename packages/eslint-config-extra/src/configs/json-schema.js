@@ -1,7 +1,7 @@
 import jsonSchemaValidatorPlugin from 'eslint-plugin-json-schema-validator'
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export default {
+export const jsonSchema = {
   files: ['**/*.{json,jsonc,json5,yml,yaml,toml}'],
   plugins: {
     'json-schema-validator': jsonSchemaValidatorPlugin,

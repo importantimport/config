@@ -16,7 +16,7 @@ An [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configurati
 ### Install
 
 ```bash
-pnpm add -D eslint @importantimport/eslint-config-svelte
+pnpm add -D eslint @importantimport/eslint-config-svelte prettier prettier-plugin-svelte
 ```
 
 ### Config
@@ -24,6 +24,20 @@ pnpm add -D eslint @importantimport/eslint-config-svelte
 ```js
 // eslint.config.js
 export { default } from '@importantimport/eslint-config-svelte'
+```
+
+```jsonc
+// .prettierrc.json
+// https://github.com/sveltejs/kit/blob/master/packages/create-svelte/shared/%2Bprettier/.prettierrc
+{
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"printWidth": 100,
+	"plugins": ["prettier-plugin-svelte"],
+	"pluginSearchDirs": ["."],
+	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+}
 ```
 
 ### VSCode
@@ -37,7 +51,7 @@ Add `svelte` to `eslint.validate`.
     "javascript",
     "json",
     "jsonc",
-    "json5"
+    "json5",
 +   "svelte"
   ]
 }

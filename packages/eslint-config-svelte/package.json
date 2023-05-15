@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@importantimport/eslint-config": "workspace:^",
+    "@importantimport/eslint-config-prettier": "workspace:^",
     "eslint-plugin-svelte": "^2.28.0",
     "svelte-eslint-parser": "^0.28.0"
   },

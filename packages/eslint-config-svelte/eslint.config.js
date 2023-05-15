@@ -1,11 +1,14 @@
-import ii from '@importantimport/eslint-config'
+import { configs as iiConfigs, prettier as iiPrettier } from '@importantimport/eslint-config'
+import { configs as prettierConfigs } from '@importantimport/eslint-config-prettier'
 
 import svelte from './src/configs/svelte'
 
 /** @type {Record<string, import('eslint').Linter.FlatConfig>} */
 export const configs = {
-  ...ii.configs,
+  ...iiConfigs,
+  ...iiPrettier,
   svelte,
+  ...prettierConfigs,
 }
 
 /** @type {import('eslint').Linter.FlatConfig[]} */

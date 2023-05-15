@@ -20,6 +20,8 @@ pnpm add -D eslint @importantimport/eslint-config @importantimport/eslint-config
 
 ### Config
 
+Simple
+
 ```js
 // eslint.config.js
 import config from '@importantimport/eslint-config'
@@ -29,6 +31,20 @@ export default [
   ...config,
   ...extra,
 ]
+```
+
+With Prettier
+
+```js
+import { configs, prettier } from '@importantimport/eslint-config'
+import { configs as configsExtra, prettier as prettierExtra } from '@importantimport/eslint-config-extra'
+
+export default Object.values({
+  ...configs,
+  ...prettier,
+  ...configsExtra,
+  ...prettierExtra,
+})
 ```
 
 ### VSCode
