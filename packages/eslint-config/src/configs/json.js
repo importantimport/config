@@ -14,6 +14,8 @@ const shared = {
   rules: {
     'jsonc/array-bracket-newline': 'error',
     'jsonc/array-bracket-spacing': 'error',
+    'jsonc/object-curly-newline': 'error',
+    'jsonc/object-curly-spacing': 'error',
     'jsonc/sort-keys': [
       'error',
       {
