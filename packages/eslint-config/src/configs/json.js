@@ -88,6 +88,12 @@ export const json5 = {
   },
 }
 
+/** @type {import('eslint').Linter.FlatConfig} */
+export const jsoncSortKeysIgnores = {
+  files: jsoncFiles,
+  rules: { 'jsonc/sort-keys': 'off' },
+}
+
 /**
  * @type {import('eslint').Linter.FlatConfig}
  * @see {@link https://github.com/antfu/eslint-config/blob/2db56ec8f0b735fe5231405223d00838f66e0f94/packages/eslint-config-basic/index.js#L83-L151}
