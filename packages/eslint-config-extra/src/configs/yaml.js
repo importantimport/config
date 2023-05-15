@@ -14,5 +14,12 @@ export default {
   rules: {
     ...yamlPlugin.configs.base.overrides[0].rules,
     ...yamlPlugin.configs.standard.rules,
+    'yml/sort-keys': [
+      'error',
+      {
+        order: { type: 'asc' },
+        pathPattern: '.*',
+      },
+    ],
   },
 }
