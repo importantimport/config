@@ -42,11 +42,11 @@ export default defineFlatConfig(config)
 Custom
 
 ```js
-import ii from '@importantimport/eslint-config'
+import { configs } from '@importantimport/eslint-config'
 
 export default [
-  ii.configs.js,
-  ii.configs.ts,
+  configs.js,
+  configs.ts,
   {
     // your config here
   },
