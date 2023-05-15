@@ -11,6 +11,15 @@ const shared = {
     // @ts-expect-error
     jsonc: jsoncPlugin,
   },
+  rules: {
+    'jsonc/sort-keys': [
+      'error',
+      {
+        order: { type: 'asc' },
+        pathPattern: '.*',
+      },
+    ],
+  },
 }
 
 /** @type {string[]} */
@@ -35,6 +44,7 @@ export const json = {
   rules: {
     ...jsoncPlugin.configs.base.overrides[0].rules,
     ...jsoncPlugin.configs['recommended-with-json'].rules,
+    ...shared.rules,
   },
 }
 
@@ -52,6 +62,7 @@ export const jsonc = {
   rules: {
     ...jsoncPlugin.configs.base.overrides[0].rules,
     ...jsoncPlugin.configs['recommended-with-jsonc'].rules,
+    ...shared.rules,
   },
 }
 
@@ -69,6 +80,7 @@ export const json5 = {
   rules: {
     ...jsoncPlugin.configs.base.overrides[0].rules,
     ...jsoncPlugin.configs['recommended-with-json5'].rules,
+    ...shared.rules,
   },
 }
 
