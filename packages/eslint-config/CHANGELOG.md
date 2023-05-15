@@ -1,5 +1,11 @@
 # @importantimport/eslint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- [`b6589ca`](https://github.com/importantimport/config/commit/b6589ca613ac1485ebf5451125f8ae9923d880d5) Thanks [@kwaa](https://github.com/kwaa)! - JSON Sort Keys
+
 ## 0.0.3
 
 ### Patch Changes
