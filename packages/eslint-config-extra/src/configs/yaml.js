@@ -14,6 +14,12 @@ export default {
   rules: {
     ...yamlPlugin.configs.base.overrides[0].rules,
     ...yamlPlugin.configs.standard.rules,
+    'yml/block-mapping-colon-indicator-newline': [
+      'error',
+      'never',
+    ],
+    'yml/no-multiple-empty-lines': 'error',
+    'yml/no-trailing-zeros': 'error',
     'yml/sort-keys': [
       'error',
       {
