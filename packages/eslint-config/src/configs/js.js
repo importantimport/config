@@ -77,7 +77,7 @@ export const js = {
       'node_modules/@types',
     ],
     'import/parsers': {
-      espree: ['.js', '.mjs', '.jsx'],
+      espree: ['.js', '.cjs', '.mjs', '.jsx'],
     },
     'import/resolver': {
       node: true,
