@@ -73,12 +73,11 @@ export const js = {
     ...importantimportRules,
   },
   settings: {
-    'import/parsers': {
-      espree: ['.js', '.mjs', '.jsx'],
-    },
-    'import/resolver': {
-      node: { extensions: ['.js', '.mjs', '.jsx'] },
-    },
+    'import/external-module-folders': [
+      'node_modules',
+      'node_modules/@d-ts',
+      'node_modules/@types',
+    ],
   },
 }
 
@@ -111,13 +110,10 @@ export const ts = {
     'tsdoc/syntax': 'warn',
   },
   settings: {
-    'import/parsers': {
-      espree: ['.js', '.mjs', '.jsx', '.ts', '.d.ts', '.tsx'],
-    },
+    ...js.settings,
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs', '.jsx', '.ts', '.d.ts', '.tsx'] },
       typescript: {
-        extensions: ['.js', '.mjs', '.jsx', '.ts', '.d.ts', '.tsx'],
+        alwaysTryTypes: true,
       },
     },
   },
