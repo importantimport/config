@@ -19,7 +19,6 @@ import globals from 'globals'
 import antfuRules from '../rules/antfu.js'
 import importantimportRules from '../rules/ii.js'
 import masknetRules from '../rules/masknet.js'
-import sortRules from '../rules/sort.js'
 import standardRules from '../rules/standard.js'
 import unusedImportsRules from '../rules/unused-imports.js'
 
@@ -69,7 +68,6 @@ export const js = {
     ...antfuRules,
     ...unusedImportsRules,
     ...masknetRules,
-    ...sortRules,
     ...importantimportRules,
   },
   settings: {
