@@ -76,6 +76,12 @@ export const js = {
       'node_modules/@d-ts',
       'node_modules/@types',
     ],
+    'import/parsers': {
+      espree: ['.js', '.mjs', '.jsx'],
+    },
+    'import/resolver': {
+      node: true,
+    },
   },
 }
 
@@ -110,6 +116,7 @@ export const ts = {
   settings: {
     ...js.settings,
     'import/resolver': {
+      node: true,
       typescript: {
         alwaysTryTypes: true,
       },
