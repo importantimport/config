@@ -1,5 +1,14 @@
 # @importantimport/eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- [`548a895`](https://github.com/importantimport/config/commit/548a89541849a135b8743b3628b0bd9e86566171) Thanks [@kwaa](https://github.com/kwaa)! - Fix: adjust jsonc/array-bracket-newline
+  Fix: update import settings
+  Refactor: update dts rules
+  Refactor: merge sort into ii rules
+
 ## 0.0.4
 
 ### Patch Changes
