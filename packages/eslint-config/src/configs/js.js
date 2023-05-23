@@ -76,11 +76,8 @@ export const js = {
       'node_modules/@d-ts',
       'node_modules/@types',
     ],
-    'import/parsers': {
-      espree: ['.js', '.cjs', '.mjs', '.jsx'],
-    },
     'import/resolver': {
-      node: true,
+      node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
     },
   },
 }
@@ -112,15 +109,6 @@ export const ts = {
     // @ts-expect-error
     ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
     'tsdoc/syntax': 'warn',
-  },
-  settings: {
-    ...js.settings,
-    'import/resolver': {
-      node: true,
-      typescript: {
-        alwaysTryTypes: true,
-      },
-    },
   },
 }
 
