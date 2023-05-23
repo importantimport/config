@@ -1,5 +1,11 @@
 # @importantimport/eslint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- [`2118a66`](https://github.com/importantimport/config/commit/2118a666a432e8dfd419c1848ed33e7f8b05bbae) Thanks [@kwaa](https://github.com/kwaa)! - Fix: update import settings
+
 ## 0.0.6
 
 ### Patch Changes
