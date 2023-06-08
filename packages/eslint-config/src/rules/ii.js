@@ -16,6 +16,12 @@ export default {
   ...sort,
   // disable top-level-function
   'antfu/top-level-function': 'off',
+  // perfer function expressions
+  'func-style': [
+    'error',
+    'expression',
+    { allowArrowFunctions: true },
+  ],
   // allow array reduce
   'unicorn/no-array-reduce': 'off',
   // disable check file names
