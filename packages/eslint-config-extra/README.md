@@ -52,6 +52,13 @@ export default Object.values({
 ```jsonc
 // .vscode/settings.json
 {
-  "eslint.validate": ["javascript", "json", "jsonc", "json5", "toml", "yaml"]
+  "eslint.validate": [
+    "javascript",
+    "json",
+    "jsonc",
+    "json5",
+    "toml",
+    "yaml"
+  ]
 }
 ```

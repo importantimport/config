@@ -30,13 +30,13 @@ export { default } from '@importantimport/eslint-config-svelte'
 // .prettierrc.json
 // https://github.com/sveltejs/kit/blob/master/packages/create-svelte/shared/%2Bprettier/.prettierrc
 {
-	"useTabs": true,
-	"singleQuote": true,
-	"trailingComma": "none",
-	"printWidth": 100,
-	"plugins": ["prettier-plugin-svelte"],
-	"pluginSearchDirs": ["."],
-	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+  "overrides": [{"files": "*.svelte", "options": {"parser": "svelte"}}],
+  "pluginSearchDirs": ["."],
+  "plugins": ["prettier-plugin-svelte"],
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "useTabs": true
 }
 ```
 

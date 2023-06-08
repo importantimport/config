@@ -3,9 +3,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "lint": "eslint .",
-    "format": "eslint . --fix",
     "changeset": "changeset",
+    "format": "eslint . --fix",
+    "lint": "eslint .",
     "release": "pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {

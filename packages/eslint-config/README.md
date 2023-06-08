@@ -71,13 +71,18 @@ Recommended settings:
 ```jsonc
 // .vscode/settings.json
 {
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "editor.formatOnSave": false,
   "eslint.experimental.useFlatConfig": true,
-  "eslint.validate": ["javascript", "json", "jsonc", "json5"]
+  "eslint.validate": [
+    "javascript",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  "prettier.enable": false
 }
 ```
 
