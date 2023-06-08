@@ -20,6 +20,13 @@ export const yaml = {
     ],
     'yml/no-multiple-empty-lines': 'error',
     'yml/no-trailing-zeros': 'error',
+    'yml/quotes': [
+      'error',
+      {
+        avoidEscape: true,
+        prefer: 'single',
+      },
+    ],
     'yml/sort-keys': [
       'error',
       {
