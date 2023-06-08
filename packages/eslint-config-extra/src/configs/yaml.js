@@ -38,6 +38,15 @@ export const yaml = {
 }
 
 /** @type {import('eslint').Linter.FlatConfig} */
+export const yamlGithubWorkflows = {
+  files: ['**/.github/workflows/*.{yml,yaml}'],
+  rules: {
+    'yml/no-empty-mapping-value': 'off',
+    'yml/sort-keys': 'off',
+  },
+}
+
+/** @type {import('eslint').Linter.FlatConfig} */
 export const yamlPrettier = {
   files: ['**/*.{yml,yaml}'],
   ignores: ['**/pnpm-lock.yaml'],

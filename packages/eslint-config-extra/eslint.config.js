@@ -1,12 +1,13 @@
 import { jsonSchema } from './src/configs/json-schema.js'
 import { toml } from './src/configs/toml.js'
-import { yaml, yamlPrettier } from './src/configs/yaml.js'
+import { yaml, yamlGithubWorkflows, yamlPrettier } from './src/configs/yaml.js'
 
 /** @type {Record<string, import('eslint').Linter.FlatConfig>} */
 export const configs = {
   jsonSchema,
   toml,
   yaml,
+  yamlGithubWorkflows,
 }
 
 /** @type {Record<string, import('eslint').Linter.FlatConfig>} */
