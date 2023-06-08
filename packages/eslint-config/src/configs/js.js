@@ -76,9 +76,18 @@ export const js = {
       'node_modules/@d-ts',
       'node_modules/@types',
     ],
-    'import/resolver': {
-      node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
+    /**
+     * Fucking `eslint-plugin-import`
+     * @see {@link https://github.com/import-js/eslint-plugin-import/issues/2556}
+     */
+    'import/parsers': {
+      espree: ['.js', '.cjs', '.mjs', '.jsx'],
     },
+    /**
+     * Fucking `eslint-plugin-import`
+     * @see {@link https://github.com/import-js/eslint-plugin-import/issues/2556}
+     */
+    'import/resolver': { node: true },
   },
 }
 
