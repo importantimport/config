@@ -1,7 +1,7 @@
 {
   "name": "@importantimport/eslint-config-lit",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "WTFPL",
   "repository": {

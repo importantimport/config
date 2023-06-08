@@ -1,5 +1,13 @@
 # @importantimport/eslint-config-svelte
 
+## 0.0.8
+
+### Patch Changes
+
+- Updated dependencies [[`7209e73`](https://github.com/importantimport/config/commit/7209e73bb43cfbd3f06b58a087e85830b1c85949)]:
+  - @importantimport/eslint-config@0.0.8
+  - @importantimport/eslint-config-prettier@0.0.8
+
 ## 0.0.7
 
 ### Patch Changes

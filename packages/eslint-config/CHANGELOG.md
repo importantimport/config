@@ -1,5 +1,15 @@
 # @importantimport/eslint-config
 
+## 0.0.8
+
+### Patch Changes
+
+- [`7209e73`](https://github.com/importantimport/config/commit/7209e73bb43cfbd3f06b58a087e85830b1c85949) Thanks [@kwaa](https://github.com/kwaa)! - Fix: add import/parsers
+  Feat: set func style
+  Feat: sort package scripts
+  Feat: global ignores
+  Feat: update jsonc rules
+
 ## 0.0.7
 
 ### Patch Changes
