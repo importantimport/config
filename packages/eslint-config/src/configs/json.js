@@ -169,6 +169,10 @@ export const packageJson = {
         ],
         pathPattern: '^exports.*$',
       },
+      {
+        order: { type: 'asc' },
+        pathPattern: '^scripts$',
+      },
     ],
   },
 }
