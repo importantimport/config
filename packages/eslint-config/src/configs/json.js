@@ -20,6 +20,13 @@ const shared = {
       },
     ],
     'jsonc/array-bracket-spacing': 'error',
+    'jsonc/array-element-newline': ['error',
+      'consistent',
+    ],
+    'jsonc/indent': [
+      'error',
+      2,
+    ],
     'jsonc/object-curly-newline': 'error',
     'jsonc/object-curly-spacing': 'error',
     'jsonc/sort-keys': [
