@@ -1,5 +1,4 @@
 import jsConfig from '@eslint/js'
-// eslint-disable-next-line import/namespace
 import * as masknetPlugin from '@masknet/eslint-plugin'
 import tsPlugin from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
