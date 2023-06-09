@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@importantimport/eslint-config": "workspace:^",
-    "@types/eslint": "^8.37.0",
-    "eslint": "^8.39.0"
+    "@types/eslint": "^8.40.1",
+    "eslint": "^8.42.0"
   }
 }
