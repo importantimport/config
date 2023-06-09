@@ -1,5 +1,11 @@
 # @importantimport/eslint-config
 
+## 0.1.0
+
+### Minor Changes
+
+- [`f9ed205`](https://github.com/importantimport/config/commit/f9ed205eda8fcab4694f16ecf9cb410fb44c994b) Thanks [@kwaa](https://github.com/kwaa)! - Refactor!: move to `eslint-plugin-perfectionist`
+
 ## 0.0.8
 
 ### Patch Changes
