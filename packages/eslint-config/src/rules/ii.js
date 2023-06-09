@@ -24,11 +24,6 @@ export default {
   ],
   // allow array reduce
   'unicorn/no-array-reduce': 'off',
-  // disable check file names
-  'unicorn/prevent-abbreviations': [
-    'error',
-    {
-      checkFilenames: false,
-    },
-  ],
+  // disable prevent abbreviations
+  'unicorn/prevent-abbreviations': 'off',
 }
