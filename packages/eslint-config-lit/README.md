@@ -8,7 +8,7 @@ An [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configurati
   - Single quotes, no semi
   - Auto fix for formatting (aimed to be used standalone **without** Prettier)
   - [Validating TSDoc](https://github.com/microsoft/tsdoc/tree/main/eslint-plugin)
-  - Radical automatic sorting (using [simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort) and [sort-keys-fix](https://github.com/leo-buneev/eslint-plugin-sort-keys-fix))
+  - Automatically sort any data that fits! (via [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist))
 - Lit Support
   - Inspired by [`@open-wc/eslint-config`](https://www.npmjs.com/package/@open-wc/eslint-config)
 
