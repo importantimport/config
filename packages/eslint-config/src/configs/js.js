@@ -6,10 +6,9 @@ import tsParser from '@typescript-eslint/parser'
 import antfuPlugin from 'eslint-plugin-antfu'
 import * as importPlugin from 'eslint-plugin-import'
 import nPlugin from 'eslint-plugin-n'
+import perfectionistPlugin from 'eslint-plugin-perfectionist'
 import promisePlugin from 'eslint-plugin-promise'
 import * as regexpPlugin from 'eslint-plugin-regexp'
-import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort'
-import sortKeysFixPlugin from 'eslint-plugin-sort-keys-fix'
 import tsdocPlugin from 'eslint-plugin-tsdoc'
 import unicornPlugin from 'eslint-plugin-unicorn'
 import unusedImportsPlugin from 'eslint-plugin-unused-imports'
@@ -19,6 +18,7 @@ import globals from 'globals'
 import antfuRules from '../rules/antfu.js'
 import importantimportRules from '../rules/ii.js'
 import masknetRules from '../rules/masknet.js'
+import perfectionistRules from '../rules/perfectionist.js'
 import standardRules from '../rules/standard.js'
 import unusedImportsRules from '../rules/unused-imports.js'
 
@@ -47,11 +47,10 @@ export const js = {
     // @ts-expect-error
     'n': nPlugin,
     // @ts-expect-error
+    'perfectionist': perfectionistPlugin,
+    // @ts-expect-error
     'promise': promisePlugin,
     'regexp': regexpPlugin,
-    // @ts-expect-error
-    'simple-import-sort': simpleImportSortPlugin,
-    'sort-keys-fix': sortKeysFixPlugin,
     // @ts-expect-error
     'unicorn': unicornPlugin,
     'unused-imports': unusedImportsPlugin,
@@ -62,12 +61,14 @@ export const js = {
     ...importPlugin.configs.recommended.rules,
     ...regexpPlugin.configs.recommended.rules,
     ...unicornPlugin.configs.recommended.rules,
+    ...perfectionistPlugin.configs['recommended-natural'].rules,
     // ...masknetPlugin.configs.recommended.rules,
     // local
     ...standardRules,
     ...antfuRules,
-    ...unusedImportsRules,
     ...masknetRules,
+    ...perfectionistRules,
+    ...unusedImportsRules,
     ...importantimportRules,
   },
   settings: {
