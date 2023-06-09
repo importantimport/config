@@ -117,6 +117,8 @@ export const ts = {
     ...tsPlugin.configs.recommended.rules,
     // @ts-expect-error
     ...tsPlugin.configs['eslint-recommended'].overrides[0].rules,
+    ...tsPlugin.configs['recommended-requiring-type-checking'].rules,
+    ...tsPlugin.configs.strict.rules,
     'tsdoc/syntax': 'warn',
   },
 }
