@@ -101,6 +101,7 @@ export const ts = {
     parser: tsParser,
     parserOptions: {
       ecmaVersion: 'latest',
+      project: true,
       sourceType: 'module',
     },
   },
