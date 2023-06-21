@@ -1,5 +1,13 @@
 # @importantimport/eslint-config-lit
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies [[`06e4b1a`](https://github.com/importantimport/config/commit/06e4b1a448dd73a5e917c2e06e005e1a61836581)]:
+  - @importantimport/eslint-config@0.1.1
+  - @importantimport/eslint-config-prettier@1.0.1
+
 ## 0.1.0
 
 ### Minor Changes
