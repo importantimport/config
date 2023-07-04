@@ -1,7 +1,7 @@
 {
   "name": "@importantimport/eslint-config-prettier",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "WTFPL",
   "repository": {
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@importantimport/eslint-config": "workspace:^",
-    "@types/eslint": "^8.40.1",
-    "eslint": "^8.42.0"
+    "@types/eslint": "^8.40.2",
+    "eslint": "^8.44.0"
   }
 }

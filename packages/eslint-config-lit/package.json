@@ -1,7 +1,7 @@
 {
   "name": "@importantimport/eslint-config-lit",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "WTFPL",
   "repository": {
@@ -32,11 +32,11 @@
     "@importantimport/eslint-config": "workspace:^",
     "@importantimport/eslint-config-prettier": "workspace:^",
     "eslint-plugin-lit": "^1.8.3",
-    "eslint-plugin-lit-a11y": "^3.0.0",
+    "eslint-plugin-lit-a11y": "^4.0.0",
     "eslint-plugin-wc": "^1.5.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.40.1",
-    "eslint": "^8.42.0"
+    "@types/eslint": "^8.40.2",
+    "eslint": "^8.44.0"
   }
 }
