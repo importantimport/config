@@ -5,6 +5,7 @@
 export default {
   '@typescript-eslint/adjacent-overload-signatures': 'off',
   '@typescript-eslint/sort-type-constituents': 'off',
+  'import/newline-after-import': 'off',
   'import/order': 'off',
   'react/jsx-sort-props': 'off',
   'sort-imports': 'off',
