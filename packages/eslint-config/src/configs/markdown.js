@@ -5,6 +5,7 @@ export const markdown = {
   files: ['**/*.md'],
   ignores: ['.changesets/*', '**/CHANGELOG.md'],
   plugins: {
+    // @ts-expect-error
     markdown: markdownPlugin,
   },
   processor: markdownPlugin.processors.markdown,
