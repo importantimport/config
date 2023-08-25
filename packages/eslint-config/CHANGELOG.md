@@ -1,5 +1,14 @@
 # @importantimport/eslint-config
 
+## 0.1.2
+
+### Patch Changes
+
+- [`9580b5c`](https://github.com/importantimport/config/commit/9580b5cc975bfcdc0247cec8a0b895b5f2926e19) Thanks [@kwaa](https://github.com/kwaa)! - Refactor: remove ts project
+  Refactor: remove type check rule
+  Refactor: remove strict rule
+  Refactor: disable import/newline-after-import
+
 ## 0.1.1
 
 ### Patch Changes
