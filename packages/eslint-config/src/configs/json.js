@@ -1,6 +1,8 @@
 import jsoncPlugin from 'eslint-plugin-jsonc'
 import jsoncParser from 'jsonc-eslint-parser'
 
+import { GLOB_ALL_JSON, GLOB_JSON, GLOB_JSON5, GLOB_JSONC } from '../utils/glob'
+
 /** @type {import('eslint').Linter.FlatConfig} */
 const shared = {
   languageOptions: {
@@ -49,7 +51,7 @@ const jsoncFiles = [
 /** @type {import('eslint').Linter.FlatConfig} */
 export const json = {
   ...shared,
-  files: ['**/*.json'],
+  files: [GLOB_JSON],
   ignores: [...jsoncFiles, '**/package-lock.json'],
   languageOptions: {
     ...shared.languageOptions,
@@ -68,7 +70,7 @@ export const json = {
 /** @type {import('eslint').Linter.FlatConfig} */
 export const jsonc = {
   ...shared,
-  files: ['**/*.jsonc', ...jsoncFiles],
+  files: [GLOB_JSONC, ...jsoncFiles],
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
@@ -86,7 +88,7 @@ export const jsonc = {
 /** @type {import('eslint').Linter.FlatConfig} */
 export const json5 = {
   ...shared,
-  files: ['**/*.json5'],
+  files: [GLOB_JSON5],
   languageOptions: {
     ...shared.languageOptions,
     parserOptions: {
@@ -185,6 +187,6 @@ export const packageJson = {
 }
 
 export const jsoncPrettier = {
-  files: ['**/*.{json,jsonc,json5}'],
+  files: [GLOB_ALL_JSON],
   rules: jsoncPlugin.configs.prettier.rules,
 }

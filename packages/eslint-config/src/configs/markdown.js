@@ -1,8 +1,10 @@
 import markdownPlugin from 'eslint-plugin-markdown'
 
+import { GLOB_MARKDOWN } from '../utils/glob'
+
 /** @type {import('eslint').Linter.FlatConfig} */
 export const markdown = {
-  files: ['**/*.md'],
+  files: [GLOB_MARKDOWN],
   ignores: ['.changesets/*', '**/CHANGELOG.md'],
   plugins: {
     // @ts-expect-error
@@ -13,7 +15,7 @@ export const markdown = {
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const markdownCodeBlock = {
-  files: ['**/*.md/**'],
+  files: [`${GLOB_MARKDOWN}/*.ts`],
   languageOptions: {
     parserOptions: {
       ecmaFeatures: {

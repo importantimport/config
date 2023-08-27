@@ -20,10 +20,12 @@ import masknetRules from '../rules/masknet.js'
 import perfectionistRules from '../rules/perfectionist.js'
 import standardRules from '../rules/standard.js'
 import unusedImportsRules from '../rules/unused-imports.js'
+// utils
+import { GLOB_ALL_JS, GLOB_ALL_TS, GLOB_DTS } from '../utils/glob.js'
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const js = {
-  files: ['**/*.{js,mjs,jsx}'],
+  files: [GLOB_ALL_JS],
   ignores: ['coverage/*', 'dist/*', 'node_modules/*'],
   languageOptions: {
     globals: {
@@ -94,7 +96,7 @@ export const js = {
 /** @type {import('eslint').Linter.FlatConfig} */
 export const ts = {
   ...js,
-  files: ['**/*.ts?(x)'],
+  files: [GLOB_ALL_TS],
   languageOptions: {
     ...js.languageOptions,
     // @ts-expect-error
@@ -123,7 +125,7 @@ export const ts = {
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const dts = {
-  files: ['**/*.d.ts'],
+  files: [GLOB_DTS],
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-extraneous-class': 'off',

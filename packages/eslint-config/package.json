@@ -21,6 +21,7 @@
       "import": "./eslint.config.js",
       "default": "./eslint.config.js"
     },
+    "./src/*": "./src/*",
     "./package.json": "./package.json"
   },
   "main": "./eslint.config.js",
