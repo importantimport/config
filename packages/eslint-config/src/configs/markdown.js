@@ -15,7 +15,7 @@ export const markdown = {
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const markdownCodeBlock = {
-  files: [`${GLOB_MARKDOWN}/*.ts`],
+  files: [`${GLOB_MARKDOWN}/*`],
   languageOptions: {
     parserOptions: {
       ecmaFeatures: {
