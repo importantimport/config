@@ -36,14 +36,14 @@ export { default } from '@importantimport/eslint-config'
 
 ### Packages
 
-| Package | Type | Basic Config Included | Basic Config Required |
-| - | - | - | - |
-| [`@importantimport/eslint-config`](/packages/eslint-config) | Basic Config (JS, JSON, TS, Markdown) | - | - |
-| [`@importantimport/eslint-config-extra`](/packages/eslint-config-extra) | Extra Config (JSON Schema, YAML, TOML) | - | - |
-| [`@importantimport/eslint-config-prettier`](/packages/eslint-config-prettier) | Prettier Config | - | - |
-| [`@importantimport/eslint-config-lit`](/packages/eslint-config-lit) | Library / Frameworks (Lit) | ✅ | - |
-| [`@importantimport/eslint-config-react`](/packages/eslint-config-react) | Library / Frameworks (React) | ✅ | - |
-| [`@importantimport/eslint-config-svelte`](/packages/eslint-config-svelte) | Library / Frameworks (Svelte) | ✅ | - |
+| Package | Type | Basic Config Included | Basic Config Required | Without Prettier |
+| - | - | - | - | - |
+| [`@importantimport/eslint-config`](/packages/eslint-config) | Basic Config (JS, JSON, TS, Markdown) | - | - | ✅ |
+| [`@importantimport/eslint-config-extra`](/packages/eslint-config-extra) | Extra Config (JSON Schema, YAML, TOML) | - | - | ✅ |
+| [`@importantimport/eslint-config-prettier`](/packages/eslint-config-prettier) | Prettier Config | - | - | - |
+| [`@importantimport/eslint-config-lit`](/packages/eslint-config-lit) | Library / Frameworks (Lit) | ✅ | - | - |
+| [`@importantimport/eslint-config-react`](/packages/eslint-config-react) | Library / Frameworks (React) | ✅ | - | ✅ |
+| [`@importantimport/eslint-config-svelte`](/packages/eslint-config-svelte) | Library / Frameworks (Svelte) | ✅ | - | - |
 
 ### Developing
 
