@@ -1,5 +1,7 @@
 import ii from '@importantimport/eslint-config'
 import { GLOB_JSX, GLOB_TSX } from '@importantimport/eslint-config/src/utils/glob'
+// eslint-plugin-jsx-a11y
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 // eslint-plugin-react
 import reactPlugin from 'eslint-plugin-react'
 import reactRuntime from 'eslint-plugin-react/configs/jsx-runtime'
@@ -22,15 +24,17 @@ export const jsx = {
     },
   },
   plugins: {
+    'jsx-a11y': jsxA11yPlugin,
     'react': reactPlugin,
     'react-hooks': reactHooksPlugin,
     'react-refresh': reactRefreshPlugin,
   },
   rules: {
-    ...reactRefreshRules,
+    ...jsxA11yPlugin.configs.recommended.rules,
     ...reactRecommended.rules,
     ...reactRuntime.rules,
     ...reactHooksPlugin.configs.recommended.rules,
+    ...reactRefreshRules,
   },
   settings: { react: { version: 'latest' } },
 }
@@ -46,42 +50,3 @@ export const tsx = {
   rules: jsx.rules,
   settings: jsx.settings,
 }
-
-// module.exports = {
-//   root: true,
-//   env: { browser: true, es2020: true },
-//   extends: [
-//     'eslint:recommended',
-//     'plugin:@typescript-eslint/recommended',
-//     'plugin:react-hooks/recommended',
-//   ],
-//   ignorePatterns: ['dist', '.eslintrc.cjs'],
-//   parser: '@typescript-eslint/parser',
-//   plugins: ['react-refresh'],
-//   rules: {
-//     'react-refresh/only-export-components': [
-//       'warn',
-//       { allowConstantExport: true },
-//     ],
-//   },
-// }
-
-// /** @type {import('eslint').Linter.FlatConfig} */
-// export default {
-//   files: ['**/*.tsx'],
-//   languageOptions: {
-//     ...ii.configs.ts.languageOptions,
-//     parser: svelteParser,
-//     parserOptions: {
-//       parser: ii.configs.ts.languageOptions.parser,
-//     },
-//   },
-//   plugins: {
-//     ...ii.configs.ts.plugins,
-//     svelte: sveltePlugin,
-//   },
-//   rules: {
-//     ...ii.configs.ts.rules,
-//     ...sveltePlugin.configs.recommended.rules,
-//   },
-// }
