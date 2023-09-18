@@ -1,5 +1,5 @@
 // rules
-import rules from '../rules/recess-order'
+import rules from '../rules/recess-order.js'
 
 // utils
 import { GLOB_CSS_JS, GLOB_CSS_TS } from '../utils/glob.js'

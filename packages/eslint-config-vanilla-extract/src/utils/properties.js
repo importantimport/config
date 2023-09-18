@@ -1,4 +1,4 @@
-import propertyGroups from 'stylelint-config-recess-order/groups'
+import propertyGroups from 'stylelint-config-recess-order/groups.js'
 
 /** @type {string[]} */
 export const properties = [
