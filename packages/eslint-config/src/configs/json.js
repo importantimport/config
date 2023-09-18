@@ -1,7 +1,7 @@
 import jsoncPlugin from 'eslint-plugin-jsonc'
 import jsoncParser from 'jsonc-eslint-parser'
 
-import { GLOB_ALL_JSON, GLOB_JSON, GLOB_JSON5, GLOB_JSONC } from '../utils/glob'
+import { GLOB_ALL_JSON, GLOB_JSON, GLOB_JSON5, GLOB_JSONC } from '../utils/glob.js'
 
 /** @type {import('eslint').Linter.FlatConfig} */
 const shared = {

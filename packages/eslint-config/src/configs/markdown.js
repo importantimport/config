@@ -1,6 +1,6 @@
 import markdownPlugin from 'eslint-plugin-markdown'
 
-import { GLOB_MARKDOWN } from '../utils/glob'
+import { GLOB_MARKDOWN } from '../utils/glob.js'
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const markdown = {
