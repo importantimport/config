@@ -1,9 +1,10 @@
 import config from '@importantimport/eslint-config'
 import extra from '@importantimport/eslint-config-extra'
-import { defineFlatConfig } from 'eslint-define-config'
+// import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginPlugin from 'eslint-plugin-eslint-plugin'
 
-export default defineFlatConfig([
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [
   ...config,
   ...extra,
   {
@@ -12,7 +13,8 @@ export default defineFlatConfig([
       'eslint-plugin': eslintPluginPlugin,
     },
     rules: {
+      // @ts-ignore jesus christ
       ...eslintPluginPlugin.configs.recommended.rules,
     },
   },
-])
+]
