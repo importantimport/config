@@ -44,6 +44,7 @@ export { default } from '@importantimport/eslint-config'
 | [`@importantimport/eslint-config-lit`](/packages/eslint-config-lit) | Library / Frameworks (Lit) | ✅ | - | - |
 | [`@importantimport/eslint-config-react`](/packages/eslint-config-react) | Library / Frameworks (React) | ✅ | - | ✅ |
 | [`@importantimport/eslint-config-svelte`](/packages/eslint-config-svelte) | Library / Frameworks (Svelte) | ✅ | - | - |
+| [`@importantimport/eslint-config-vanilla-extract`](/packages/eslint-config-vanilla-extract) | Library / Frameworks (Vanilla Extract) | - | - | ✅ |
 
 ### Developing
 
