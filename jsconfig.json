@@ -4,7 +4,7 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": [
-      "ES2020",
+      "ESNext",
       "DOM",
       "DOM.Iterable"
     ],
@@ -24,7 +24,8 @@
     "checkJs": true
   },
   "include": [
-    "src",
+    "packages/**/src",
+    "packages/**/eslint.config.js",
     "eslint.config.js"
   ]
 }
