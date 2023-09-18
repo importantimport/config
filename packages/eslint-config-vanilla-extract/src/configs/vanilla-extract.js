@@ -5,7 +5,7 @@ import rules from '../rules/recess-order.js'
 import { GLOB_CSS_JS, GLOB_CSS_TS } from '../utils/glob.js'
 
 /** @type {import('eslint').Linter.FlatConfig} */
-export const js = {
+export const vanillaExtract = {
   files: [GLOB_CSS_JS, GLOB_CSS_TS],
   ignores: ['coverage/*', 'dist/*', 'node_modules/*'],
   rules,
