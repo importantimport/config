@@ -43,6 +43,7 @@ const shared = {
 
 /** @type {string[]} */
 const jsoncFiles = [
+  '**/.vscode/*.json',
   '**/{j,t}sconfig.json',
   '**/{j,t}sconfig-*.json',
   '**/{j,t}sconfig.*.json',
