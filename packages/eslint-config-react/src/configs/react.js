@@ -1,5 +1,5 @@
 import ii from '@importantimport/eslint-config'
-import { GLOB_JSX, GLOB_TSX } from '@importantimport/eslint-config/src/utils/glob'
+import { GLOB_JSX, GLOB_TSX } from '@importantimport/eslint-config/src/utils/glob.js'
 // eslint-plugin-jsx-a11y
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 // eslint-plugin-react
@@ -12,7 +12,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks'
 import reactRefreshPlugin from 'eslint-plugin-react-refresh'
 
 // rules
-import reactRefreshRules from '../rules/react-refresh'
+import reactRefreshRules from '../rules/react-refresh.js'
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const jsx = {

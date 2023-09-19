@@ -1,6 +1,6 @@
 import { configs as iiConfigs } from '@importantimport/eslint-config'
 
-import { jsx, tsx } from './src/configs/react'
+import { jsx, tsx } from './src/configs/react.js'
 
 /** @type {Record<string, import('eslint').Linter.FlatConfig>} */
 export const configs = {
