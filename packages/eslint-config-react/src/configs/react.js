@@ -41,7 +41,7 @@ export const jsx = {
     ...reactHooksPlugin.configs.recommended.rules,
     ...reactRefreshRules,
   },
-  settings: { react: { version: 'latest' } },
+  settings: { react: { version: '18.3' } },
 }
 
 /** @type {import('eslint').Linter.FlatConfig} */
