@@ -4,8 +4,8 @@ import { GLOB_JSX, GLOB_TSX } from '@importantimport/eslint-config/src/utils/glo
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 // eslint-plugin-react
 import reactPlugin from 'eslint-plugin-react'
-import reactRuntime from 'eslint-plugin-react/configs/jsx-runtime'
-import reactRecommended from 'eslint-plugin-react/configs/recommended'
+import reactRuntime from 'eslint-plugin-react/configs/jsx-runtime.js'
+import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
 // eslint-plugin-react-hooks
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
 // eslint-plugin-react-refresh
@@ -25,11 +25,15 @@ export const jsx = {
     },
   },
   plugins: {
+    // @ts-expect-error
     'jsx-a11y': jsxA11yPlugin,
+    // @ts-expect-error
     'react': reactPlugin,
+    // @ts-expect-error
     'react-hooks': reactHooksPlugin,
     'react-refresh': reactRefreshPlugin,
   },
+  // @ts-expect-error
   rules: {
     ...jsxA11yPlugin.configs.recommended.rules,
     ...reactRecommended.rules,
