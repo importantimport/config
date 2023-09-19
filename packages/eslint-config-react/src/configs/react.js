@@ -1,4 +1,4 @@
-import ii from '@importantimport/eslint-config'
+import { configs as iiConfigs } from '@importantimport/eslint-config'
 import { GLOB_JSX, GLOB_TSX } from '@importantimport/eslint-config/src/utils/glob.js'
 // eslint-plugin-jsx-a11y
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
@@ -18,8 +18,9 @@ import reactRefreshRules from '../rules/react-refresh.js'
 export const jsx = {
   files: [GLOB_JSX],
   languageOptions: {
+    ...iiConfigs.js.languageOptions,
     parserOptions: {
-      ...ii.configs.js.languageOptions,
+      ...iiConfigs.js.languageOptions?.parserOptions,
       ecmaFeatures: { jsx: true },
     },
   },
@@ -43,8 +44,11 @@ export const jsx = {
 export const tsx = {
   files: [GLOB_TSX],
   languageOptions: {
-    ...ii.configs.ts.languageOptions,
-    ecmaFeatures: { jsx: true },
+    ...iiConfigs.ts.languageOptions,
+    parserOptions: {
+      ...iiConfigs.ts.languageOptions?.parserOptions,
+      ecmaFeatures: { jsx: true },
+    }
   },
   plugins: jsx.plugins,
   rules: jsx.rules,
