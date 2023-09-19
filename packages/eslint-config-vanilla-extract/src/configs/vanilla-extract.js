@@ -1,9 +1,8 @@
-// plugins
+// parent config
 import { ts } from '@importantimport/eslint-config/src/configs/js.js'
 
 // rules
 import recessOrderRules from '../rules/recess-order.js'
-
 // utils
 import { GLOB_CSS_TS } from '../utils/glob.js'
 
