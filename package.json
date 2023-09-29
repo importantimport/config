@@ -6,6 +6,7 @@
     "changeset": "changeset",
     "format": "eslint . --fix",
     "lint": "eslint .",
+    "preview": "NITRO_HOST=0.0.0.0 eslint-flat-config-viewer",
     "release": "pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {
@@ -17,6 +18,7 @@
     "@types/node": "^20.3.3",
     "eslint": "^8.44.0",
     "eslint-define-config": "^1.21.0",
+    "eslint-flat-config-viewer": "^0.0.8",
     "eslint-plugin-eslint-plugin": "^5.1.0",
     "tsup": "^7.1.0"
   },
