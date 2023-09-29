@@ -14,27 +14,18 @@ const shared = {
     jsonc: jsoncPlugin,
   },
   rules: {
-    'jsonc/array-bracket-newline': [
-      'error',
-      {
-        minItems: 2,
-        multiline: true,
-      },
-    ],
     'jsonc/array-bracket-spacing': 'error',
-    'jsonc/array-element-newline': ['error',
-      'consistent',
-    ],
-    'jsonc/indent': [
-      'error',
-      2,
-    ],
-    'jsonc/object-curly-newline': 'error',
-    'jsonc/object-curly-spacing': 'error',
+    'jsonc/comma-style': ['error', 'last'],
+    'jsonc/indent': ['error', 2],
+    'jsonc/key-spacing': ['error', { beforeColon: false, afterColon: true }],
+    'jsonc/no-octal-escape': 'error',
+    'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
+    'jsonc/object-curly-spacing': ['error', 'always'],
+    'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
     'jsonc/sort-keys': [
       'error',
       {
-        order: { type: 'asc' },
+        order: { natural: true },
         pathPattern: '.*',
       },
     ],

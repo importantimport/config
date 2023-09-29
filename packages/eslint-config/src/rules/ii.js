@@ -12,4 +12,5 @@ export default {
   'unicorn/no-array-reduce': 'off',
   // disable prevent abbreviations
   'unicorn/prevent-abbreviations': 'off',
+  'quote-props': ['error', 'as-needed']
 }

@@ -125,8 +125,10 @@ export const ts = {
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const dts = {
+  ...ts,
   files: [GLOB_DTS],
   rules: {
+    ...ts.rules,
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-extraneous-class': 'off',
     '@typescript-eslint/no-namespace': 'off',
