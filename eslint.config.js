@@ -1,11 +1,10 @@
-import config from '@importantimport/eslint-config'
+import { createFullConfig } from '@importantimport/eslint-config'
 import extra from '@importantimport/eslint-config-extra'
-// import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginPlugin from 'eslint-plugin-eslint-plugin'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
-  ...config,
+export default await createFullConfig(
+  { ts: true },
+  // @ts-ignore
   ...extra,
   {
     files: ['./packages/eslint-config/**/*.js', './packages/eslint-config-*/**/*.js'],
@@ -17,4 +16,4 @@ export default [
       ...eslintPluginPlugin.configs.recommended.rules,
     },
   },
-]
+)

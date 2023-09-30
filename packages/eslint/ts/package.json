@@ -1,0 +1,43 @@
+{
+  "name": "@importantimport/eslint-config-ts",
+  "type": "module",
+  "version": "0.1.2",
+  "description": "An ESLint Flat Config for !mportantImport.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/config.git",
+    "directory": "packages/eslint/ts"
+  },
+  "bugs": "https://github.com/importantimport/config/issues",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "config"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch"
+  },
+  "devDependencies": {
+    "@importantimport/eslint-config": "workspace:*"
+  },
+  "peerDependencies": {
+    "@importantimport/eslint-config": "workspace:*"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin-ts": "^0.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint-plugin-tsdoc": "^0.2.17"
+  }
+}
