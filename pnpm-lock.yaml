@@ -37,6 +37,9 @@ importers:
       '@importantimport/eslint-config-ts':
         specifier: workspace:^
         version: link:packages/eslint/ts
+      '@importantimport/tsconfig':
+        specifier: workspace:*
+        version: link:packages/tsconfig
       '@types/eslint':
         specifier: ^8.40.2
         version: 8.40.2

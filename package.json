@@ -15,6 +15,7 @@
     "@importantimport/eslint-config": "workspace:^",
     "@importantimport/eslint-config-extra": "workspace:^",
     "@importantimport/eslint-config-ts": "workspace:^",
+    "@importantimport/tsconfig": "workspace:*",
     "@types/eslint": "^8.40.2",
     "@types/node": "^20.3.3",
     "eslint": "^8.44.0",
