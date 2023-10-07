@@ -6,8 +6,8 @@
 | - | - | - |
 | [`@importantimport/eslint-config`](./config/) | Basic Config (JS, JSON) | - |
 | [`@importantimport/eslint-config-ts`](./ts/) | TypeScript Config | ✅ |
-| [`@importantimport/eslint-config-react`](/packages/eslint-config-react) | Library / Frameworks (React) | ✅ |
-| [`@importantimport/eslint-config-vanilla-extract`](/packages/eslint-config-vanilla-extract) | Library / Frameworks (Vanilla Extract) | ✅ |
+| [`@importantimport/eslint-config-react`](./react) | Library / Frameworks (React) | ✅ |
+| [`@importantimport/eslint-config-vanilla-extract`](./vanilla-extract) | Library / Frameworks (Vanilla Extract) | ✅ |
 
 ## Usage
 
