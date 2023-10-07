@@ -112,22 +112,6 @@ importers:
         specifier: ^8.44.0
         version: 8.44.0
 
-  packages/eslint-config-vanilla-extract:
-    dependencies:
-      stylelint-config-recess-order:
-        specifier: ^4.3.0
-        version: 4.3.0(stylelint@15.10.3)
-    devDependencies:
-      '@importantimport/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint/config
-      '@types/eslint':
-        specifier: ^8.40.2
-        version: 8.40.2
-      eslint:
-        specifier: ^8.44.0
-        version: 8.44.0
-
   packages/eslint/config:
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments':
@@ -209,6 +193,16 @@ importers:
       eslint-plugin-tsdoc:
         specifier: ^0.2.17
         version: 0.2.17
+    devDependencies:
+      '@importantimport/eslint-config':
+        specifier: workspace:*
+        version: link:../config
+
+  packages/eslint/vanilla-extract:
+    dependencies:
+      stylelint-config-recess-order:
+        specifier: ^4.3.0
+        version: 4.3.0(stylelint@15.10.3)
     devDependencies:
       '@importantimport/eslint-config':
         specifier: workspace:*
@@ -3593,25 +3587,16 @@ packages:
       util-deprecate: 1.0.2
     dev: false
 
-  /postcss-sorting@8.0.2(postcss@8.4.24):
+  /postcss-sorting@8.0.2(postcss@8.4.31):
     resolution: {integrity: sha512-M9dkSrmU00t/jK7rF6BZSZauA5MAaBW4i5EnJXspMwt4iqTh/L9j6fgMnbElEOfyRyfLfVbIHj/R52zHzAPe1Q==}
     peerDependencies:
       postcss: ^8.4.20
     dependencies:
-      postcss: 8.4.24
+      postcss: 8.4.31
     dev: false
 
   /postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-    dev: false
-
-  /postcss@8.4.24:
-    resolution: {integrity: sha512-M0RzbcI0sO/XJNucsGjvWU9ERWxb/ytp1w6dKtxTKgixdtQDq4rmx/g8W1hnaheq9jgwL/oyEdH5Bc4WwJKMqg==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.6
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
     dev: false
 
   /postcss@8.4.31:
@@ -4078,8 +4063,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0
     dependencies:
-      postcss: 8.4.24
-      postcss-sorting: 8.0.2(postcss@8.4.24)
+      postcss: 8.4.31
+      postcss-sorting: 8.0.2(postcss@8.4.31)
       stylelint: 15.10.3
     dev: false
 

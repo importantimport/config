@@ -1,7 +1,8 @@
+import type { FlatESLintConfigItem } from '@importantimport/eslint-config/utils/types'
+
 import { properties } from '../utils/properties.js'
 
-/** @type {import('eslint').Linter.FlatConfig['rules']} */
-export default {
+export const rules: FlatESLintConfigItem['rules'] = {
   'perfectionist/sort-objects': [
     'warn',
     {

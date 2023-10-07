@@ -14,6 +14,11 @@ export const GLOB_ALL_JSON = [GLOB_JSON, GLOB_JSONC, GLOB_JSON5]
 
 export const GLOB_MARKDOWN = '**/*.md'
 
+/** for `@importantimport/eslint-config-vanilla-extract` */
+export const GLOB_CSS_JS = '**/*.css.js'
+/** for `@importantimport/eslint-config-vanilla-extract` */
+export const GLOB_CSS_TS = '**/*.css.ts'
+
 export const GLOB_EXCLUDE = [
   '**/.git/**',
   '**/dist/**',

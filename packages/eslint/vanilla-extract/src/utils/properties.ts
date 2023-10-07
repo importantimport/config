@@ -1,10 +1,10 @@
+// @ts-ignore missing types
 import propertyGroups from 'stylelint-config-recess-order/groups.js'
 
-/** @type {string[]} */
-export const properties = [
-  ...new Set(propertyGroups
-    .flatMap(({ properties }) =>
-      properties.map(property =>
+export const properties: string[] = [
+  ...new Set<string>(propertyGroups
+    .flatMap(({ properties }: { properties: string[] }) =>
+      properties.map((property: string) =>
         property
           // filtering `-ms-filter`
           .replaceAll(/-ms-filter:.*/g, 'msFilter')
