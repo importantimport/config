@@ -1,0 +1,11 @@
+// https://github.com/vitejs/vite/blob/main/packages/create-vite/template-react-ts/tsconfig.node.json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@importantimport/tsconfig",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/importantimport/config.git",
+    "directory": "packages/tsconfig"
+  },
+  "bugs": "https://github.com/importantimport/config/issues",
+  "keywords": [
+    "tsconfig"
+  ],
+  "main": "tsconfig.json"
+}
