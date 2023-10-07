@@ -7,6 +7,7 @@ export const sortTsconfig = (): FlatESLintConfigItem => ({
       'error',
       {
         order: [
+          '$schema',
           'extends',
           'compilerOptions',
           'references',

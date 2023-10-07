@@ -14,6 +14,7 @@ export const sortPackageJson = (): FlatESLintConfigItem => ({
       'error',
       {
         order: [
+          '$schema',
           'publisher',
           'name',
           'displayName',
