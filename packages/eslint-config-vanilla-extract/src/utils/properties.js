@@ -12,7 +12,7 @@ export const properties = [
           .replaceAll('-ms', 'ms')
           // convert kebab-case to camelCase
           // should handle `-webkit` and `-moz` just fine
-          .replaceAll(/(-[a-z])/g, s => s.slice(1).toUpperCase())
-      )
-    ))
+          .replaceAll(/(-[a-z])/g, s => s.slice(1).toUpperCase()),
+      ),
+    )),
 ]

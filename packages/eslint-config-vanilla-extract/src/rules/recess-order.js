@@ -5,10 +5,10 @@ export default {
   'perfectionist/sort-objects': [
     'warn',
     {
-      type: 'natural',
-      order: 'asc',
       'always-on-top': properties,
+      order: 'asc',
       'partition-by-comment': 'Part:**',
-    }
-  ]
+      type: 'natural',
+    },
+  ],
 }

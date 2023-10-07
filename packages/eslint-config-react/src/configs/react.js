@@ -1,5 +1,4 @@
-import { js } from '@importantimport/eslint-config/src/configs/js.js'
-import { ts } from '@importantimport/eslint-config/src/configs/js.js'
+import { js, ts } from '@importantimport/eslint-config/src/configs/js.js'
 import { GLOB_JSX, GLOB_TSX } from '@importantimport/eslint-config/src/utils/glob.js'
 // eslint-plugin-jsx-a11y
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
@@ -67,7 +66,7 @@ export const tsx = {
     parserOptions: {
       ...ts.languageOptions?.parserOptions,
       ecmaFeatures: { jsx: true },
-    }
+    },
   },
   plugins: {
     ...ts.plugins,
