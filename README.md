@@ -15,6 +15,20 @@ pnpm add -D eslint @importantimport/eslint-config
 export { default } from '@importantimport/eslint-config'
 ```
 
+## [TSConfig](/packages/tsconfig/) [![npm](https://img.shields.io/npm/v/@importantimport/tsconfig)](https://npmjs.com/package/@importantimport/tsconfig)
+
+```bash
+pnpm add -D @importantimport/tsconfig
+```
+
+```json
+// tsconfig.json
+{
+  "extends": "@importantimport/tsconfig",
+  "include": ["src"]
+}
+```
+
 ## License
 
 Licensed under the [MIT](LICENSE).
