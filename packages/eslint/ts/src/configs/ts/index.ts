@@ -11,14 +11,14 @@ export type OptionsTypeScript = {
   project?: ParserOptions['project']
 }
 
-export const ts = (options: OptionsTypeScript): FlatESLintConfigItem[] => [
+export const ts = (options?: OptionsTypeScript): FlatESLintConfigItem[] => [
   {
     files: [GLOB_TS, GLOB_TSX],
     languageOptions: {
       // @ts-expect-error parser types error
       parser: parserTypeScript,
       parserOptions: {
-        project: options.project,
+        project: options?.project,
         sourceType: 'module',
       },
     },
@@ -32,7 +32,7 @@ export const ts = (options: OptionsTypeScript): FlatESLintConfigItem[] => [
     // @ts-expect-error plugin types error
     rules: {
       ...pluginTypeScript.configs['eslint-recommended'].overrides![0].rules,
-      ...(options.project
+      ...(options?.project
         ? [
             // @ts-expect-error plugin types error
             ...pluginTypeScript.configs.strict.rules,
