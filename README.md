@@ -21,7 +21,7 @@ export { default } from '@importantimport/eslint-config'
 pnpm add -D @importantimport/tsconfig
 ```
 
-```json
+```jsonc
 // tsconfig.json
 {
   "extends": "@importantimport/tsconfig",

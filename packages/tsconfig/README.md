@@ -6,7 +6,7 @@
 
 ###### general
 
-```json
+```jsonc
 // tsconfig.json
 {
   "extends": "@importantimport/tsconfig",
@@ -28,7 +28,7 @@
 
 ###### node
 
-```json
+```jsonc
 // tsconfig.node.json
 {
   "extends": "@importantimport/tsconfig/tsconfig.node.json",
