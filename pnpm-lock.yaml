@@ -90,31 +90,6 @@ importers:
         specifier: ^8.44.0
         version: 8.44.0
 
-  packages/eslint-config-react:
-    dependencies:
-      '@importantimport/eslint-config':
-        specifier: workspace:^
-        version: link:../eslint/config
-      eslint-plugin-jsx-a11y:
-        specifier: ^6.7.1
-        version: 6.7.1(eslint@8.44.0)
-      eslint-plugin-react:
-        specifier: ^7.33.2
-        version: 7.33.2(eslint@8.44.0)
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.0
-        version: 4.6.0(eslint@8.44.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.3
-        version: 0.4.3(eslint@8.44.0)
-    devDependencies:
-      '@types/eslint':
-        specifier: ^8.40.2
-        version: 8.40.2
-      eslint:
-        specifier: ^8.44.0
-        version: 8.44.0
-
   packages/eslint/config:
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments':
@@ -181,6 +156,25 @@ importers:
       eslint:
         specifier: ^8.44.0
         version: 8.44.0
+
+  packages/eslint/react:
+    dependencies:
+      eslint-plugin-jsx-a11y:
+        specifier: ^6.7.1
+        version: 6.7.1(eslint@8.51.0)
+      eslint-plugin-react:
+        specifier: ^7.33.2
+        version: 7.33.2(eslint@8.51.0)
+      eslint-plugin-react-hooks:
+        specifier: ^4.6.0
+        version: 4.6.0(eslint@8.51.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.3
+        version: 0.4.3(eslint@8.51.0)
+    devDependencies:
+      '@importantimport/eslint-config':
+        specifier: workspace:*
+        version: link:../config
 
   packages/eslint/ts:
     dependencies:
@@ -2054,7 +2048,7 @@ packages:
       natural-compare: 1.4.0
     dev: false
 
-  /eslint-plugin-jsx-a11y@6.7.1(eslint@8.44.0):
+  /eslint-plugin-jsx-a11y@6.7.1(eslint@8.51.0):
     resolution: {integrity: sha512-63Bog4iIethyo8smBklORknVjB0T2dwB8Mr/hIC+fBS0uyHdYYpzM/Ed+YC8VxTjlXHEWFOdmgwcDn1U2L9VCA==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -2069,7 +2063,7 @@ packages:
       axobject-query: 3.2.1
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
-      eslint: 8.44.0
+      eslint: 8.51.0
       has: /@nolyfill/has@1.0.21
       jsx-ast-utils: 3.3.5
       language-tags: 1.0.5
@@ -2134,24 +2128,24 @@ packages:
       eslint: 8.44.0
     dev: false
 
-  /eslint-plugin-react-hooks@4.6.0(eslint@8.44.0):
+  /eslint-plugin-react-hooks@4.6.0(eslint@8.51.0):
     resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     dependencies:
-      eslint: 8.44.0
+      eslint: 8.51.0
     dev: false
 
-  /eslint-plugin-react-refresh@0.4.3(eslint@8.44.0):
+  /eslint-plugin-react-refresh@0.4.3(eslint@8.51.0):
     resolution: {integrity: sha512-Hh0wv8bUNY877+sI0BlCUlsS0TYYQqvzEwJsJJPM2WF4RnTStSnSR3zdJYa2nPOJgg3UghXi54lVyMSmpCalzA==}
     peerDependencies:
       eslint: '>=7'
     dependencies:
-      eslint: 8.44.0
+      eslint: 8.51.0
     dev: false
 
-  /eslint-plugin-react@7.33.2(eslint@8.44.0):
+  /eslint-plugin-react@7.33.2(eslint@8.51.0):
     resolution: {integrity: sha512-73QQMKALArI8/7xGLNI/3LylrEYrlKZSb5C9+q3OtOewTnMQi5cT+aE9E41sLCmli3I9PGGmD1yiZydyo4FEPw==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2162,7 +2156,7 @@ packages:
       array.prototype.tosorted: /@nolyfill/array.prototype.tosorted@1.0.21
       doctrine: 2.1.0
       es-iterator-helpers: /@nolyfill/es-iterator-helpers@1.0.21
-      eslint: 8.44.0
+      eslint: 8.51.0
       estraverse: 5.3.0
       jsx-ast-utils: 3.3.5
       minimatch: 3.1.2

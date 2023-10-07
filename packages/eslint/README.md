@@ -40,7 +40,7 @@ import { createFullConfig } from '@importantimport/eslint-config'
 
 export default await createFullConfig({
   ts: { project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'] },
-  react: true,
+  react: { version: '18.3' },
 })
 ```
 
@@ -57,7 +57,7 @@ import { createConfig as createReactConfig } from '@importantimport/eslint-confi
 export default createConfig(
   {/* ...yourOptions */},
   ...createTsConfig({ project: true }),
-  ...createReactConfig()
+  ...createReactConfig({ version: '18.3' })
 )
 ```
 
