@@ -17,6 +17,7 @@ export const jsStylistic = (): FlatESLintConfigItem => ({
     '@stylistic/js/comma-style': ['error', 'last'],
     '@stylistic/js/computed-property-spacing': ['error', 'never', { enforceForClassMembers: true }],
     '@stylistic/js/dot-location': ['error', 'property'],
+    '@stylistic/js/eol-last': ['error', 'always'],
     '@stylistic/js/indent': ['error', 2, {
       ArrayExpression: 1,
       CallExpression: { arguments: 1 },

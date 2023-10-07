@@ -48,7 +48,7 @@
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^3.2.1",
     "@eslint/js": "^8.44.0",
-    "@stylistic/eslint-plugin-js": "^0.0.5",
+    "@stylistic/eslint-plugin-js": "^0.0.6",
     "defu": "^6.1.2",
     "eslint-config-flat-gitignore": "^0.1.0",
     "eslint-define-config": "^1.21.0",
