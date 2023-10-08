@@ -38,11 +38,19 @@
     "watch": "tsup --watch"
   },
   "peerDependencies": {
+    "@importantimport/eslint-config-react": "workspace:*",
     "@importantimport/eslint-config-ts": "workspace:*",
+    "@importantimport/eslint-config-vanilla-extract": "workspace:*",
     "eslint": "^8.39.0"
   },
   "peerDependenciesMeta": {
+    "@importantimport/eslint-config-react": {
+      "optional": true
+    },
     "@importantimport/eslint-config-ts": {
+      "optional": true
+    },
+    "@importantimport/eslint-config-vanilla-extract": {
       "optional": true
     }
   },
@@ -67,7 +75,9 @@
     "jsonc-eslint-parser": "^2.3.0"
   },
   "devDependencies": {
+    "@importantimport/eslint-config-react": "workspace:*",
     "@importantimport/eslint-config-ts": "workspace:*",
+    "@importantimport/eslint-config-vanilla-extract": "workspace:*",
     "@types/eslint": "^8.40.2",
     "eslint": "^8.44.0"
   }

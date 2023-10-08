@@ -147,9 +147,15 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0
     devDependencies:
+      '@importantimport/eslint-config-react':
+        specifier: workspace:*
+        version: link:../react
       '@importantimport/eslint-config-ts':
         specifier: workspace:*
         version: link:../ts
+      '@importantimport/eslint-config-vanilla-extract':
+        specifier: workspace:*
+        version: link:../vanilla-extract
       '@types/eslint':
         specifier: ^8.40.2
         version: 8.40.2

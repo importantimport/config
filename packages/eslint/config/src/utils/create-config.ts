@@ -49,10 +49,23 @@ export const createFullConfig
     }
 
     // React
-    // if (options.react) {
-    //   const { createConfigItem } = await import('@importantimport/eslint-config-react')
-    //   config.push(createConfigItem(options.react))
-    // }
+    if (options.react) {
+      await import('@importantimport/eslint-config-react')
+        .then(({ createConfig }) =>
+          createConfig(typeof options.react === 'boolean' ? {} : options.react)
+            .forEach(item => config.push(item)),
+        )
+    }
+
+    // Vanilla Extract
+    if (options.vanillaExtract) {
+      await import('@importantimport/eslint-config-vanilla-extract')
+        .then(({ createConfig }) =>
+          // TODO: OptionsVanillaExtract
+          createConfig()
+            .forEach(item => config.push(item)),
+        )
+    }
 
     if (userConfigs)
       userConfigs.forEach(userConfig => config.push(userConfig))
