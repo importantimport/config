@@ -2,7 +2,6 @@
   "name": "@importantimport/eslint-config-vanilla-extract",
   "type": "module",
   "version": "0.1.2",
-  "private": true,
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "WTFPL",
   "repository": {
