@@ -2,18 +2,6 @@
 
 An [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new) for [!mportantImport](https://github.com/importantimport).
 
-<!-- > This is a base configuration, with JavaScript / TypeScript as the main focus. -->
-
-<!-- ## Features
-
-- Based on
-  [`@antfu/eslint-config-basic`](https://github.com/antfu/eslint-config/tree/main/packages/eslint-config-basic)
-  - Single quotes, no semi
-  - Auto fix for formatting (aimed to be used standalone **without** Prettier)
-- [Validating TSDoc](https://github.com/microsoft/tsdoc/tree/main/eslint-plugin)
-- Automatically sort any data that fits! (via
-  [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)) -->
-
 ## Usage
 
 ### `createFullConfig`
