@@ -7,7 +7,7 @@
     "format": "eslint . --fix",
     "lint": "eslint .",
     "preview": "NITRO_HOST=0.0.0.0 eslint-flat-config-viewer",
-    "release": "pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
+    "release": "pnpm -r build && pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
