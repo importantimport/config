@@ -1,5 +1,18 @@
 # @importantimport/eslint-config
 
+## 1.0.0
+
+### Minor Changes
+
+- [`1738b94`](https://github.com/importantimport/config/commit/1738b9496642c61dd38e3f4fc26fe0d10dda78b2) Thanks [@kwaa](https://github.com/kwaa)! - Version 0.2.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @importantimport/eslint-config-react@1.0.0
+  - @importantimport/eslint-config-ts@1.0.0
+  - @importantimport/eslint-config-vanilla-extract@1.0.0
+
 ## 0.1.2
 
 ### Patch Changes

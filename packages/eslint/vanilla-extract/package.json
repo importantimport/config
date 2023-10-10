@@ -1,7 +1,7 @@
 {
   "name": "@importantimport/eslint-config-vanilla-extract",
   "type": "module",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "WTFPL",
   "repository": {
@@ -27,7 +27,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "watch": "tsup --watch"
