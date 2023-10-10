@@ -15,6 +15,11 @@
   //   "jsx": "react-jsx",
   //   optional (lit):
   //   "experimentalDecorators": true,
+  //   optional (recommended paths):
+  //   "baseUrl": ".",
+  //   "paths": {
+  //     "~/*": ["src/*"]
+  //   }
   // },
   "include": ["src"],
   // "references": [
