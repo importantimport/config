@@ -1,5 +1,11 @@
 # @importantimport/eslint-config
 
+## 0.2.0
+
+### Minor Changes
+
+- Rewrite in TypeScript
+
 ## 0.1.2
 
 ### Patch Changes

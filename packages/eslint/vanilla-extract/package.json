@@ -1,9 +1,9 @@
 {
   "name": "@importantimport/eslint-config-vanilla-extract",
   "type": "module",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "An ESLint Flat Config for !mportantImport.",
-  "license": "WTFPL",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/importantimport/config.git",
