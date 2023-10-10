@@ -41,29 +41,32 @@ export const createFullConfig
 
     // TypeScript
     if (options.ts) {
+      // @ts-ignore missing types
       await import('@importantimport/eslint-config-ts')
         .then(({ createConfig }) =>
           createConfig(typeof options.ts === 'boolean' ? {} : options.ts)
-            .forEach(item => config.push(item)),
+            .forEach((item: FlatESLintConfigItem) => config.push(item)),
         )
     }
 
     // React
     if (options.react) {
+      // @ts-ignore missing types
       await import('@importantimport/eslint-config-react')
         .then(({ createConfig }) =>
           createConfig(typeof options.react === 'boolean' ? {} : options.react)
-            .forEach(item => config.push(item)),
+            .forEach((item: FlatESLintConfigItem) => config.push(item)),
         )
     }
 
     // Vanilla Extract
     if (options.vanillaExtract) {
+      // @ts-ignore missing types
       await import('@importantimport/eslint-config-vanilla-extract')
         .then(({ createConfig }) =>
           // TODO: OptionsVanillaExtract
           createConfig()
-            .forEach(item => config.push(item)),
+            .forEach((item: FlatESLintConfigItem) => config.push(item)),
         )
     }
 
