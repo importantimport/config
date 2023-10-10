@@ -1,9 +1,9 @@
 import type { FlatGitignoreOptions } from 'eslint-config-flat-gitignore'
 
 // eslint-disable-next-line n/no-unpublished-import
-import type { OptionsReact } from '../../../react/src/configs/react'
+import type { OptionsReact } from '../../../react/src/utils/options'
 // eslint-disable-next-line n/no-unpublished-import
-import type { OptionsTypeScript } from '../../../ts/src/configs/ts'
+import type { OptionsTypeScript } from '../../../ts/src/utils/options'
 import type { OptionsIgnores } from '../configs/ignores'
 import type { OptionsJavaScript } from '../configs/js/index'
 

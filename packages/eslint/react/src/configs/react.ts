@@ -6,11 +6,9 @@ import configRuntime from 'eslint-plugin-react/configs/jsx-runtime.js'
 // @ts-ignore missing types
 import configRecommended from 'eslint-plugin-react/configs/recommended.js'
 
-import { pluginJsxA11y, pluginReact, pluginReactHooks, pluginReactRefresh } from '../utils/plugins'
+import type { OptionsReact } from '../utils/options'
 
-export type OptionsReact = {
-  version?: string
-}
+import { pluginJsxA11y, pluginReact, pluginReactHooks, pluginReactRefresh } from '../utils/plugins'
 
 export const react = (options?: OptionsReact): FlatESLintConfigItem[] => [{
   files: [GLOB_JSX, GLOB_TSX],
