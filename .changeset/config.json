@@ -11,6 +11,13 @@
   "commit": false,
   "fixed": [],
   "ignore": [],
-  "linked": [],
+  "linked": [
+    [
+      "@importantimport/eslint-config",
+      "@importantimport/eslint-config-react",
+      "@importantimport/eslint-config-ts",
+      "@importantimport/eslint-config-vanilla-extract"
+    ]
+  ],
   "updateInternalDependencies": "patch"
 }
