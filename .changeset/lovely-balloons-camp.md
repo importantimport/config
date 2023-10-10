@@ -1,5 +1,5 @@
 ---
-"@importantimport/eslint-config": minor
+"@importantimport/eslint-config": patch
 ---
 
 Version 0.2.0
