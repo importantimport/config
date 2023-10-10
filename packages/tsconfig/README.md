@@ -43,7 +43,7 @@
 
 ###### eslint
 
-```json
+```jsonc
 // tsconfig.eslint.json
 {
   "extends": "./tsconfig.json",
