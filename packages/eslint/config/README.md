@@ -1,12 +1,10 @@
 # @importantimport/eslint-config [![npm](https://img.shields.io/npm/v/@importantimport/eslint-config)](https://npmjs.com/package/@importantimport/eslint-config)
 
-An
-[ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new)
-for [!mportantImport](https://github.com/importantimport).
+An [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new) for [!mportantImport](https://github.com/importantimport).
 
-> This is a base configuration, with JavaScript / TypeScript as the main focus.
+<!-- > This is a base configuration, with JavaScript / TypeScript as the main focus. -->
 
-## Features
+<!-- ## Features
 
 - Based on
   [`@antfu/eslint-config-basic`](https://github.com/antfu/eslint-config/tree/main/packages/eslint-config-basic)
@@ -14,52 +12,82 @@ for [!mportantImport](https://github.com/importantimport).
   - Auto fix for formatting (aimed to be used standalone **without** Prettier)
 - [Validating TSDoc](https://github.com/microsoft/tsdoc/tree/main/eslint-plugin)
 - Automatically sort any data that fits! (via
-  [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist))
+  [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)) -->
 
 ## Usage
 
-### Install
+### `createFullConfig`
+
+You can create a configuration containing extensions directly using the `createFullConfig` function provided by `@importantimport/eslint-config`.
+
+First install the configuration, add `ts` and `react` here:
 
 ```bash
-# lcoal only
-pnpm add -D eslint @importantimport/eslint-config
-
-# with config-ts (T)
-pnpm add -D eslint @importantimport/eslint-config @importantimport/eslint-config-ts
+pnpm add -D eslint @importantimport/eslint-config @importantimport/eslint-config-ts @importantimport/eslint-config-react
+# or yarn add -D
+# or npm i -D
 ```
 
-### Config
-
-###### default
-
-```js
-// eslint.config.js
-export { default } from '@importantimport/eslint-config'
-```
-
-###### createConfig
-
-```js
-// eslint.config.js
-import { createConfig } from '@importantimport/eslint-config'
-
-export default createConfig({ ...yourOptions })
-```
-
-###### createFullConfig (experimental)
+Then enable the installed extensions in the options:
 
 ```js
 // eslint.config.js
 import { createFullConfig } from '@importantimport/eslint-config'
 
 export default await createFullConfig({
-  ...yourOptions,
-  /**
-   * this will automatically import `@importantimport/eslint-config-ts`
-   * so you'll need to install it at the same time.
-   */
   ts: true,
+  react: true,
 })
+```
+
+A portion of the configuration also allows you to customize options, like this:
+
+```js
+import { createFullConfig } from '@importantimport/eslint-config'
+
+export default await createFullConfig({
+  ts: { project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'] },
+  react: { version: '18.3' },
+})
+```
+
+### `createConfig`
+
+You can also use `createConfig` to create configurations separately. As opposed to `createFullConfig`, which is synchronized.
+
+```js
+// eslint.config.js
+import { createConfig } from '@importantimport/eslint-config'
+import { createConfig as createTsConfig } from '@importantimport/eslint-config-ts'
+import { createConfig as createReactConfig } from '@importantimport/eslint-config-react'
+
+export default createConfig(
+  {/* ...yourOptions */},
+  ...createTsConfig({ project: true }),
+  ...createReactConfig({ version: '18.3' })
+)
+```
+
+### `default`
+
+If you don't need to customize it at all, you can use the default export.
+
+```js
+// eslint.config.js
+export { default } from '@importantimport/eslint-config'
+```
+
+```js
+// eslint.config.js
+import config from '@importantimport/eslint-config'
+import ts from '@importantimport/eslint-config-ts'
+import react from '@importantimport/eslint-config-react'
+
+export default [
+  ...config,
+  ...ts,
+  ...react,
+]
 ```
 
 ### VSCode
