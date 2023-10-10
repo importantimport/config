@@ -12,6 +12,7 @@ export const ts = (options?: OptionsTypeScript): FlatESLintConfigItem[] => [
   {
     files: [GLOB_TS, GLOB_TSX],
     languageOptions: {
+      // @ts-expect-error parser types error
       parser: parserTypeScript,
       parserOptions: {
         project: options?.project,
@@ -20,14 +21,17 @@ export const ts = (options?: OptionsTypeScript): FlatESLintConfigItem[] => [
     },
     plugins: {
       '@stylistic/ts': pluginStylisticTs,
+      // @ts-expect-error plugin types error
       '@typescript-eslint': pluginTypeScript,
       antfu: pluginAntfu,
       tsdoc: pluginTSDoc,
     },
+    // @ts-expect-error plugin types error
     rules: {
       ...pluginTypeScript.configs['eslint-recommended'].overrides![0].rules,
       ...(options?.project
         ? [
+            // @ts-expect-error plugin types error
             ...pluginTypeScript.configs.strict.rules,
             ...pluginTypeScript.configs['recommended-requiring-type-checking'].rules,
           ]
