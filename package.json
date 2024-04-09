@@ -12,15 +12,12 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.27.1",
-    "@importantimport/eslint-config-old": "workspace:^",
-    "@importantimport/eslint-config-extra": "workspace:^",
-    "@importantimport/eslint-config-ts": "workspace:^",
+    "@importantimport/eslint-config": "workspace:*",
     "@importantimport/tsconfig": "workspace:*",
     "@types/eslint": "^8.56.7",
     "@types/node": "^20.12.6",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "eslint-define-config": "^1.24.1",
-    "eslint-flat-config-viewer": "^0.0.8",
     "eslint-plugin-eslint-plugin": "^5.5.1",
     "tsup": "^7.2.0"
   },
