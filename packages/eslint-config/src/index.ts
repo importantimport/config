@@ -1,0 +1,1 @@
+export { createConfig, type Options } from './factory'
