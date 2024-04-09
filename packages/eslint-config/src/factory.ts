@@ -6,9 +6,7 @@ import { type Options, type AntfuOptions, defaultOptions } from './options'
 import { defu } from 'defu'
 import { antfu } from '@antfu/eslint-config'
 
-import { functional } from './configs/functional'
-import { perfectionist } from './configs/perfectionist'
-import { totalFunctions } from './configs/total-functions'
+import { functional, perfectionist, totalFunctions } from './configs'
 
 export const createConfig = (userOptions: Partial<Options> = {}): FlatConfigComposer<Linter.FlatConfig> => {
     const options = defu(userOptions, defaultOptions)
