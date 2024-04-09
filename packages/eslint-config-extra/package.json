@@ -36,15 +36,15 @@
     }
   },
   "dependencies": {
-    "eslint-plugin-json-schema-validator": "^4.5.0",
+    "eslint-plugin-json-schema-validator": "^4.9.0",
     "eslint-plugin-toml": "^0.5.0",
-    "eslint-plugin-yml": "^1.8.0",
-    "toml-eslint-parser": "^0.6.0",
+    "eslint-plugin-yml": "^1.14.0",
+    "toml-eslint-parser": "^0.6.1",
     "yaml-eslint-parser": "^1.2.2"
   },
   "devDependencies": {
     "@importantimport/eslint-config": "workspace:^",
-    "@types/eslint": "^8.40.2",
-    "eslint": "^8.44.0"
+    "@types/eslint": "^8.56.7",
+    "eslint": "^8.57.0"
   }
 }

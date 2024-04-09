@@ -32,7 +32,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "watch": "tsup --watch"
@@ -56,29 +58,29 @@
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^3.2.1",
-    "@eslint/js": "^8.44.0",
+    "@eslint/js": "^8.57.0",
     "@stylistic/eslint-plugin-js": "^0.0.6",
-    "defu": "^6.1.2",
-    "eslint-config-flat-gitignore": "^0.1.0",
-    "eslint-define-config": "^1.21.0",
+    "defu": "^6.1.4",
+    "eslint-config-flat-gitignore": "^0.1.5",
+    "eslint-define-config": "^1.24.1",
     "eslint-plugin-antfu": "1.0.0-beta.8",
     "eslint-plugin-import": "npm:eslint-plugin-i@2.27.5-4",
-    "eslint-plugin-jsonc": "^2.9.0",
-    "eslint-plugin-markdown": "^3.0.0",
-    "eslint-plugin-n": "^16.0.1",
-    "eslint-plugin-perfectionist": "^1.4.0",
+    "eslint-plugin-jsonc": "^2.15.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-perfectionist": "^1.5.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-regexp": "^1.15.0",
     "eslint-plugin-unicorn": "^47.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "globals": "^13.20.0",
-    "jsonc-eslint-parser": "^2.3.0"
+    "globals": "^13.24.0",
+    "jsonc-eslint-parser": "^2.4.0"
   },
   "devDependencies": {
     "@importantimport/eslint-config-react": "workspace:*",
     "@importantimport/eslint-config-ts": "workspace:*",
     "@importantimport/eslint-config-vanilla-extract": "workspace:*",
-    "@types/eslint": "^8.40.2",
-    "eslint": "^8.44.0"
+    "@types/eslint": "^8.56.7",
+    "eslint": "^8.57.0"
   }
 }
