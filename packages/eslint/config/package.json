@@ -1,6 +1,7 @@
 {
-  "name": "@importantimport/eslint-config",
+  "name": "@importantimport/eslint-config-old",
   "type": "module",
+  "private": true,
   "version": "0.2.0",
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "MIT",

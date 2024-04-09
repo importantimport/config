@@ -1,6 +1,7 @@
 {
   "name": "@importantimport/eslint-config-react",
   "type": "module",
+  "private": true,
   "version": "0.2.0",
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "MIT",
@@ -35,7 +36,7 @@
     "watch": "tsup --watch"
   },
   "peerDependencies": {
-    "@importantimport/eslint-config": "workspace:*"
+    "@importantimport/eslint-config-old": "workspace:*"
   },
   "dependencies": {
     "eslint-plugin-jsx-a11y": "^6.8.0",
@@ -44,6 +45,6 @@
     "eslint-plugin-react-refresh": "^0.4.6"
   },
   "devDependencies": {
-    "@importantimport/eslint-config": "workspace:*"
+    "@importantimport/eslint-config-old": "workspace:*"
   }
 }
