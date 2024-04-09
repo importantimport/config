@@ -43,6 +43,7 @@
     "defu": "^6.1.4",
     "eslint-flat-config-utils": "^0.2.1",
     "eslint-plugin-functional": "^6.4.0",
-    "eslint-plugin-perfectionist": "^1.5.1"
+    "eslint-plugin-perfectionist": "^1.5.1",
+    "eslint-plugin-total-functions": "^7.1.0"
   }
 }

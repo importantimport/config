@@ -8,6 +8,7 @@ import { antfu } from '@antfu/eslint-config'
 
 import { functional } from './configs/functional'
 import { perfectionist } from './configs/perfectionist'
+import { totalFunctions } from './configs/total-functions'
 
 export const createConfig = (userOptions: Partial<Options> = {}): FlatConfigComposer<Linter.FlatConfig> => {
     const options = defu(userOptions, defaultOptions)
@@ -18,6 +19,9 @@ export const createConfig = (userOptions: Partial<Options> = {}): FlatConfigComp
 
     if (options.perfectionist)
         configs.append(perfectionist(options.perfectionist))
+
+    if (options.totalFunctions && options.typescript)
+        configs.append(totalFunctions())
 
     return configs
 }
