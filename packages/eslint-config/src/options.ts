@@ -1,6 +1,7 @@
 import type { OptionsConfig as AntfuOptions } from '@antfu/eslint-config'
 
 type ImportantimportOptions = {
+    functional: false | 'lite' | 'recommended' | 'strict'
     perfectionist: false | 'alphabetical' | 'natural' | 'line-length'
     vanillaExtract: boolean
 }
@@ -24,6 +25,7 @@ const defaultOptionsAntfu: AntfuOptions = {
 }
 
 const defaultOptionsImportantimport: ImportantimportOptions = {
+    functional: 'recommended',
     perfectionist: 'natural',
     vanillaExtract: false,
 }
