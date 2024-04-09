@@ -16,6 +16,11 @@ const defaultOptionsAntfu: AntfuOptions = {
     typescript: true,
     unocss: false,
     vue: false,
+    stylistic: {
+        overrides: {
+            'antfu/top-level-function': 'off'
+        }
+    }
 }
 
 const defaultOptionsImportantimport: ImportantimportOptions = {
