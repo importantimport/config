@@ -3,6 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "dev:eslint": "eslint-config-inspector",
+    "build:eslint": "eslint-config-inspector build",
     "changeset": "changeset",
     "format": "eslint . --fix",
     "lint": "eslint .",
@@ -12,6 +14,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.27.1",
+    "@eslint/config-inspector": "^0.4.4",
     "@importantimport/eslint-config": "workspace:*",
     "@importantimport/tsconfig": "workspace:*",
     "@types/eslint": "^8.56.7",
