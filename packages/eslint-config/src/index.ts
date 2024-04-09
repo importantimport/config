@@ -1,1 +1,2 @@
-export { createConfig, type Options } from './factory'
+export { createConfig } from './factory'
+export type { Options } from './options'
