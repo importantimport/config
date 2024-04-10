@@ -14,8 +14,5 @@ export default createConfig({
   }, {
     name: 'workspace/eslint-plugin/rules',
     files: ['./packages/eslint-config/**/*.ts'],
-    rules: {
-      // @ts-ignore jesus christ
-      ...eslintPluginPlugin.configs.recommended.rules,
-    },
+    rules: eslintPluginPlugin.configs.recommended.rules,
   })
