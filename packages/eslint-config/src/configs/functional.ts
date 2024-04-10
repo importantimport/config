@@ -13,16 +13,17 @@ export const functional = (option: Exclude<Options['functional'], false>, typesc
   },
   {
     name: 'importantimport/functional/rules',
-    rules: {
-      ...functionalPlugin.configs[option].rules as Record<string, any>,
-      ...functionalPlugin.configs.externalVanillaRecommended.rules as Record<string, any>,
-    },
+    rules: functionalPlugin.configs[option].rules,
+  },
+  {
+    name: 'importantimport/functional/rules-javascript',
+    rules: functionalPlugin.configs.externalVanillaRecommended.rules,
   },
   ...(typeof typescript === 'object' && (typescript as OptionsTypeScriptWithTypes).tsconfigPath
     ? [{
         files: [GLOB_TS, GLOB_TSX],
-        name: 'importantimport/functional/typescript-rules',
-        rules: functionalPlugin.configs.externalTypescriptRecommended.rules as Record<string, any>,
+        name: 'importantimport/functional/rules-typescript',
+        rules: functionalPlugin.configs.externalTypescriptRecommended.rules,
       }]
     : []),
 ]
