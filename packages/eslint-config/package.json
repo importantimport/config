@@ -1,8 +1,8 @@
 {
   "name": "@importantimport/eslint-config",
   "type": "module",
-  "private": true,
   "version": "0.3.0",
+  "private": true,
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "MIT",
   "repository": {
@@ -17,9 +17,6 @@
     "eslint-config",
     "config"
   ],
-  "files": [
-    "dist"
-  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -27,6 +24,9 @@
     },
     "./package.json": "./package.json"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup --watch",
@@ -36,15 +36,15 @@
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
-  "devDependencies": {
-    "@types/eslint": "^8.56.7",
-    "eslint": "^9.0.0"
-  },
   "dependencies": {
     "@antfu/eslint-config": "^2.13.2",
     "defu": "^6.1.4",
     "eslint-flat-config-utils": "^0.2.1",
     "eslint-plugin-functional": "^6.4.0",
     "eslint-plugin-perfectionist": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.7",
+    "eslint": "^9.0.0"
   }
 }
