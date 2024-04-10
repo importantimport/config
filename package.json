@@ -6,9 +6,8 @@
     "dev:eslint": "eslint-config-inspector",
     "build:eslint": "eslint-config-inspector build",
     "changeset": "changeset",
-    "format": "eslint . --fix",
     "lint": "eslint .",
-    "preview": "NITRO_HOST=0.0.0.0 eslint-flat-config-viewer",
+    "lint:fix": "eslint . --fix",
     "release": "pnpm -rF @importantimport/eslint-config build && pnpm -r build && pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
   },
   "devDependencies": {
