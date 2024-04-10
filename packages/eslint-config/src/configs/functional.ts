@@ -3,13 +3,12 @@ import type { Options } from "../options"
 
 import { GLOB_TS, GLOB_TSX, type OptionsTypeScriptWithTypes } from '@antfu/eslint-config'
 
-// @ts-ignore
 import functionalPlugin from 'eslint-plugin-functional/flat'
 
 export const functional = (option: Exclude<Options['functional'], false>, typescript: Options['typescript']): Linter.FlatConfig[] => [
     {
         name: 'importantimport/functional/setup',
-        plugins: { functional: functionalPlugin }
+        plugins: { functional: functionalPlugin as any }
 
     },
     {

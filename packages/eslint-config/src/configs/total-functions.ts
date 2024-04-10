@@ -1,6 +1,7 @@
 import type { Linter } from "eslint"
 import { GLOB_TS, GLOB_TSX, type OptionsTypeScriptWithTypes } from '@antfu/eslint-config'
 
+// @ts-ignore no types
 import totalFunctionsPlugin from 'eslint-plugin-total-functions'
 import { Options } from "../options"
 
