@@ -71,8 +71,8 @@ importers:
         specifier: ^6.4.0
         version: 6.4.0(eslint@9.0.0)(typescript@5.4.4)
       eslint-plugin-perfectionist:
-        specifier: ^1.5.1
-        version: 1.5.1(eslint@9.0.0)(typescript@5.4.4)
+        specifier: ^2.8.0
+        version: 2.8.0(eslint@9.0.0)(typescript@5.4.4)(vue-eslint-parser@9.4.2)
       eslint-plugin-total-functions:
         specifier: ^7.1.0
         version: 7.1.0(eslint@9.0.0)(typescript@5.4.4)
@@ -3299,23 +3299,6 @@ packages:
       '@typescript-eslint/types': 5.62.0
       '@typescript-eslint/utils': 5.62.0(eslint@8.57.0)(typescript@5.4.4)
       eslint: 8.57.0
-      is-core-module: 2.13.1
-      json5: 2.2.3
-      minimatch: 9.0.4
-      natural-compare-lite: 1.4.0
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: false
-
-  /eslint-plugin-perfectionist@1.5.1(eslint@9.0.0)(typescript@5.4.4):
-    resolution: {integrity: sha512-PiUrAfGDc/l6MKKUP8qt5RXueC7FZC6F/0j8ijXYU8o3x8o2qUi6zEEYBkId/IiKloIXM5KTD4jrH9833kDNzA==}
-    peerDependencies:
-      eslint: '>=8.0.0'
-    dependencies:
-      '@typescript-eslint/types': 5.62.0
-      '@typescript-eslint/utils': 5.62.0(eslint@9.0.0)(typescript@5.4.4)
-      eslint: 9.0.0
       is-core-module: 2.13.1
       json5: 2.2.3
       minimatch: 9.0.4
