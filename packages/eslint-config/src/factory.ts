@@ -22,7 +22,7 @@ export const createConfig = (userOptions: Partial<Options> = {}): FlatConfigComp
         configs.append(perfectionist(options.perfectionist))
 
     if (options.totalFunctions && options.typescript)
-        configs.append(totalFunctions())
+        configs.append(totalFunctions(options.typescript))
 
     return configs
 }
