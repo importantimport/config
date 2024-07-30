@@ -57,6 +57,8 @@ This package has some framework-specific tsconfig parts that you can use to over
 }
 ```
 
+Go to the [`parts`](/packages/tsconfig/parts/) directory to see all available parts.
+
 ## License
 
 [MIT](../../LICENSE.md)
