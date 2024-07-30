@@ -1,6 +1,3 @@
 {
-  "extends": "@importantimport/tsconfig",
-  "include": [
-    "packages/eslint/**/src"
-  ]
+  "extends": "@importantimport/tsconfig"
 }
