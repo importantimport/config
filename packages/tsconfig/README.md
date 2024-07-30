@@ -56,3 +56,7 @@ This package has some framework-specific tsconfig parts that you can use to over
   "include": ["src", "test"]
 }
 ```
+
+## License
+
+[MIT](../../LICENSE.md)

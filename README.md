@@ -24,11 +24,10 @@ pnpm add -D @importantimport/tsconfig
 ```jsonc
 // tsconfig.json
 {
-  "extends": "@importantimport/tsconfig",
-  "include": ["src"]
+  "extends": "@importantimport/tsconfig"
 }
 ```
 
 ## License
 
-Licensed under the [MIT](LICENSE).
+[MIT](LICENSE.md)
