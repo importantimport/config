@@ -38,5 +38,6 @@
       "object.values": "npm:@nolyfill/object.values@latest",
       "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest"
     }
-  }
+  },
+  "packageManager": "pnpm@9.6.0"
 }

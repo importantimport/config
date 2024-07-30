@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./parts/app.json",
+  "include": ["src", "test"]
+}

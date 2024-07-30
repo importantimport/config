@@ -1,11 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    // "paths": {
-    //   "~/*": ["src/*"]
-    // },
-    "outDir": "dist",
-    "strictNullChecks": true
-  }
+  "files": [],
+  "references": [
+    {
+      "path": "./app.json"
+    },
+    {
+      "path": "./node.json"
+    }
+  ]
 }

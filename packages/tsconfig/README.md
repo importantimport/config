@@ -2,6 +2,14 @@
 
 ## Usage
 
+### Install
+
+```bash
+pnpm add -D @importantimport/tsconfig # pnpm
+yarn add -D @importantimport/tsconfig # yarn
+npm i -D @importantimport/tsconfig # npm
+```
+
 ### Example
 
 ###### general
@@ -9,25 +17,17 @@
 ```jsonc
 // tsconfig.json
 {
-  "extends": "@importantimport/tsconfig",
-  // "compilerOptions": {
-  //   optional (jsx):
-  //   "jsx": "react-jsx",
-  //   optional (lit):
-  //   "experimentalDecorators": true,
-  //   optional (recommended paths):
-  //   "baseUrl": ".",
-  //   "paths": {
-  //     "~/*": ["src/*"]
-  //   }
-  // },
-  "include": ["src"],
-  // "references": [
-  //   optional (node):
-  //   { "path": "./tsconfig.node.json" },
-  //   optional (eslint):
-  //   { "path": "./tsconfig.eslint.json" },
-  // ]
+  "extends": "@importantimport/tsconfig"
+}
+```
+
+###### app
+
+```jsonc
+// tsconfig.app.json
+{
+  "extends": "@importantimport/tsconfig/app.json",
+  "include": ["src", "test"]
 }
 ```
 
@@ -36,39 +36,23 @@
 ```jsonc
 // tsconfig.node.json
 {
-  "extends": "@importantimport/tsconfig/tsconfig.node.json",
-  "include": ["*.config.ts"]
+  "extends": "@importantimport/tsconfig/node.json",
+  "include": ["*.config.ts", "*.config.js"]
 }
 ```
 
-###### eslint
+### Parts
+
+This package has some framework-specific tsconfig parts that you can use to override the default tsconfig.
 
 ```jsonc
-// tsconfig.eslint.json
+// tsconfig.app.json
 {
-  "extends": "./tsconfig.json",
-  "include": ["src", "test", "*.config.ts"],
-  "exclude": ["node_modules"]
+  "extends": [
+    "@importantimport/tsconfig/tsconfig.app.json",
+    "@importantimport/tsconfig/parts/jsx-react.json",
+    "@importantimport/tsconfig/parts/paths-at.json"
+  ],
+  "include": ["src", "test"]
 }
-```
-
-### With `@importantimport/eslint-config`
-
-```bash
-pnpm add -D eslint @importantimport/eslint-config @importantimport/eslint-config-ts @importantimport/tsconfig
-```
-
-```ts
-// eslint.config.js
-import { createFullConfig } from '@importantimport/eslint-config'
-
-export default await createFullConfig({
-  // ...yourOptions,
-  ts: {
-    // one root tsconfig.json
-    project: ['./tsconfig.eslint.json']
-    // one tsconfig.json per package
-    // project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json']
-  }
-})
 ```
