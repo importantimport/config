@@ -1,3 +1,4 @@
 {
-  "extends": "@importantimport/tsconfig/app.json"
+  "extends": "@importantimport/tsconfig/app.json",
+  "include": ["src"]
 }
