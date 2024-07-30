@@ -3,6 +3,9 @@ dist
 dist-ssr
 *.local
 
+# npmrc
+.npmrc
+
 # dependencies
 node_modules
 
