@@ -49,7 +49,7 @@ This package has some framework-specific tsconfig parts that you can use to over
 // tsconfig.app.json
 {
   "extends": [
-    "@importantimport/tsconfig/tsconfig.app.json",
+    "@importantimport/tsconfig/app.json",
     "@importantimport/tsconfig/parts/jsx-react.json",
     "@importantimport/tsconfig/parts/paths-at.json"
   ],
