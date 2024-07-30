@@ -8,7 +8,7 @@
     "changeset": "changeset",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "release": "pnpm -rF @importantimport/eslint-config build && pnpm -r build && pnpm -rF \"./packages/**\" publish --no-git-checks --access public"
+    "release": "pnpm -r build && pnpm -r publish --no-git-checks --access public"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
