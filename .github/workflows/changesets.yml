@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - .changeset/**
+      - .github/workflows/changesets.yml
   workflow_dispatch:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
@@ -14,17 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v4
         id: pnpm-install
         with:
           version: latest
           run_install: false
       
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           cache: pnpm
           node-version: latest
