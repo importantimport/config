@@ -2,7 +2,6 @@
   "name": "@importantimport/eslint-config",
   "type": "module",
   "version": "0.3.0",
-  "private": true,
   "description": "An ESLint Flat Config for !mportantImport.",
   "license": "MIT",
   "repository": {
@@ -12,10 +11,7 @@
   },
   "bugs": "https://github.com/importantimport/config/issues",
   "keywords": [
-    "eslint",
-    "eslintconfig",
-    "eslint-config",
-    "config"
+    "eslint-config"
   ],
   "exports": {
     ".": {

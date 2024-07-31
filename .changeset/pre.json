@@ -1,0 +1,9 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@importantimport/eslint-config": "0.3.0",
+    "@importantimport/tsconfig": "0.1.0"
+  },
+  "changesets": []
+}
