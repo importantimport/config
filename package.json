@@ -13,15 +13,15 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.0",
-    "@changesets/changelog-github": "^0.4.8",
-    "@changesets/cli": "^2.27.1",
-    "@eslint/config-inspector": "^0.4.4",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.7",
+    "@eslint/config-inspector": "^0.5.2",
     "@importantimport/eslint-config": "workspace:*",
     "@importantimport/tsconfig": "workspace:*",
-    "@types/node": "^20.12.6",
+    "@types/node": "^22.0.0",
     "eslint": "^9.8.0",
-    "eslint-plugin-eslint-plugin": "^5.5.1",
-    "tsup": "^7.2.0"
+    "eslint-plugin-eslint-plugin": "^6.2.0",
+    "tsup": "^8.2.3"
   },
   "pnpm": {
     "overrides": {
