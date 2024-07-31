@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "@antfu/eslint-config": "^2.24.0",
-    "eslint": "^9.0.0"
+    "eslint": "^9.8.0"
   },
   "dependencies": {
     "defu": "^6.1.4",
@@ -45,6 +45,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.0",
     "@types/eslint": "^9.6.0",
-    "eslint": "^9.0.0"
+    "eslint": "^9.8.0"
   }
 }

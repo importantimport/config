@@ -18,10 +18,8 @@
     "@eslint/config-inspector": "^0.4.4",
     "@importantimport/eslint-config": "workspace:*",
     "@importantimport/tsconfig": "workspace:*",
-    "@types/eslint": "^8.56.7",
     "@types/node": "^20.12.6",
-    "eslint": "^9.0.0",
-    "eslint-define-config": "^1.24.1",
+    "eslint": "^9.8.0",
     "eslint-plugin-eslint-plugin": "^5.5.1",
     "tsup": "^7.2.0"
   },
