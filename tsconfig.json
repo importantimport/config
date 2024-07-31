@@ -1,3 +1,6 @@
 {
-  "extends": "@importantimport/tsconfig"
+  "references": [
+    { "path": "./packages/eslint-config/tsconfig.json" }
+  ],
+  "files": []
 }
