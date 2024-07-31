@@ -1,15 +1,14 @@
-import type { Linter } from 'eslint'
+import type { ESLint, Linter } from 'eslint'
 
-import { GLOB_TS, GLOB_TSX, type OptionsTypeScriptWithTypes } from '@antfu/eslint-config'
+import { GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'
 import functionalPlugin from 'eslint-plugin-functional/flat'
 
 import type { Options } from '../options'
 
-export const functional = (option: Exclude<Options['functional'], false>, typescript: Options['typescript']): Linter.FlatConfig[] => [
+export const functional = (option: Exclude<Options['functional'], false>): Linter.FlatConfig[] => [
   {
     name: 'importantimport/functional/setup',
-    plugins: { functional: functionalPlugin as any },
-
+    plugins: { functional: functionalPlugin as unknown as ESLint.Plugin },
   },
   {
     name: 'importantimport/functional/rules',
@@ -19,11 +18,9 @@ export const functional = (option: Exclude<Options['functional'], false>, typesc
     name: 'importantimport/functional/rules-javascript',
     rules: functionalPlugin.configs.externalVanillaRecommended.rules,
   },
-  ...(typeof typescript === 'object' && (typescript as OptionsTypeScriptWithTypes).tsconfigPath
-    ? [{
-        files: [GLOB_TS, GLOB_TSX],
-        name: 'importantimport/functional/rules-typescript',
-        rules: functionalPlugin.configs.externalTypescriptRecommended.rules,
-      }]
-    : []),
+  {
+    files: [GLOB_TS, GLOB_TSX],
+    name: 'importantimport/functional/rules-typescript',
+    rules: functionalPlugin.configs.externalTypescriptRecommended.rules,
+  },
 ]

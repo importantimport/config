@@ -2,6 +2,7 @@
   "name": "@importantimport/config",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
     "dev:eslint": "eslint-config-inspector",
     "build:eslint": "eslint-config-inspector build",
@@ -11,6 +12,7 @@
     "release": "pnpm -r build && pnpm -r publish --no-git-checks --access public"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.24.0",
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.27.1",
     "@eslint/config-inspector": "^0.4.4",
@@ -38,6 +40,5 @@
       "object.values": "npm:@nolyfill/object.values@latest",
       "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest"
     }
-  },
-  "packageManager": "pnpm@9.6.0"
+  }
 }

@@ -34,17 +34,18 @@
     "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
+    "@antfu/eslint-config": "^2.24.0",
     "eslint": "^9.0.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.13.2",
     "defu": "^6.1.4",
-    "eslint-flat-config-utils": "^0.2.1",
-    "eslint-plugin-functional": "^6.4.0",
-    "eslint-plugin-perfectionist": "^2.8.0"
+    "eslint-flat-config-utils": "^0.3.0",
+    "eslint-plugin-functional": "^6.4.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.7",
-    "eslint": "^9.0.0"
+    "@antfu/eslint-config": "^2.24.0",
+    "@types/eslint": "^9.6.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-perfectionist": "^3.0.0"
   }
 }

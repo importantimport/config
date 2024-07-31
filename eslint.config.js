@@ -1,11 +1,9 @@
-import { createConfig } from '@importantimport/eslint-config'
+import { antfu } from '@antfu/eslint-config'
+import { ii } from '@importantimport/eslint-config'
 import eslintPluginPlugin from 'eslint-plugin-eslint-plugin'
 
-export default createConfig({
-  typescript: {
-    tsconfigPath: 'tsconfig.json',
-  },
-})
+export default antfu()
+  .append(ii())
   .append({
     name: 'workspace/eslint-plugin/setup',
     plugins: {

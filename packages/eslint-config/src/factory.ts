@@ -1,24 +1,27 @@
 import type { Linter } from 'eslint'
-import type { FlatConfigComposer } from 'eslint-flat-config-utils'
+import type { ResolvableFlatConfig } from 'eslint-flat-config-utils'
 
-import { antfu } from '@antfu/eslint-config'
 import { defu } from 'defu'
 
 import { functional, perfectionist, sortPackageJsonScripts } from './configs'
-import { type AntfuOptions, type Options, defaultOptions } from './options'
+import { type Options, defaultOptions } from './options'
 
-export const createConfig = (userOptions: Partial<Options> = {}): FlatConfigComposer<Linter.FlatConfig> => {
+export const ii = (userOptions: Partial<Options> = {}): ResolvableFlatConfig<Linter.FlatConfig> => {
   const options = defu(userOptions, defaultOptions)
-  const configs = antfu(options as AntfuOptions)
 
-  if (options.functional)
-    configs.append(functional(options.functional, options.typescript ?? undefined))
-
-  if (options.perfectionist)
-    configs.append(perfectionist(options.perfectionist))
-
-  if (options.jsonc)
-    configs.append(sortPackageJsonScripts())
-
-  return configs
+  return [
+    sortPackageJsonScripts,
+    // ...(options.jsonc
+    //   ? [sortPackageJsonScripts]
+    //   : []
+    // ),
+    ...(options.functional
+      ? functional(options.functional)
+      : []
+    ),
+    ...(options.perfectionist
+      ? [perfectionist(options.perfectionist)]
+      : []
+    ),
+  ]
 }
