@@ -6,15 +6,27 @@ import type { Options } from '../options'
 
 type Option = Exclude<Options['perfectionist'], false>
 
-/* eslint-disable ts/no-unsafe-assignment, ts/no-unsafe-member-access */
-const perfectionistRules = {
-  'alphabetical': perfectionistPlugin.configs['recommended-alphabetical'].rules,
-  'line-length': perfectionistPlugin.configs['recommended-line-length'].rules,
-  'natural': perfectionistPlugin.configs['recommended-natural'].rules,
-} as const satisfies Record<Option, unknown>
-/* eslint-enable ts/no-unsafe-assignment, ts/no-unsafe-member-access */
+/** @see {@link https://github.com/azat-io/eslint-plugin-perfectionist/blob/bf730c4343275878814b7f48757c06f4adc69ca5/index.ts#L26C1-L29C2} */
+interface PerfectionistOptions {
+  type: 'alphabetical' | 'line-length' | 'natural'
+  order: 'desc' | 'asc'
+}
 
-export const perfectionist = (option: Option): Linter.FlatConfig => ({
+const { rules } = perfectionistPlugin
+
+/** @see {@link https://github.com/azat-io/eslint-plugin-perfectionist/blob/bf730c4343275878814b7f48757c06f4adc69ca5/index.ts#L62-L68} */
+const getRules = (options: PerfectionistOptions): Linter.RulesRecord =>
+  Object.fromEntries(
+    Object.keys(rules).map(rule => [
+      `perfectionist/${rule}`,
+      ['error', options],
+    ]),
+  )
+
+export const perfectionist = (type: Option): Linter.FlatConfig => ({
   name: 'importantimport/perfectionist/rules',
-  rules: perfectionistRules[option] as Linter.RulesRecord,
+  rules: getRules({
+    type,
+    order: type === 'line-length' ? 'desc' : 'asc'
+  }),
 })
