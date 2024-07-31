@@ -3,7 +3,9 @@ import { ii } from '@importantimport/eslint-config'
 import eslintPluginPlugin from 'eslint-plugin-eslint-plugin'
 
 export default antfu({
-  typescript: true
+  typescript: {
+    tsconfigPath: 'tsconfig.json'
+  }
 })
   .append(ii())
   .append({
