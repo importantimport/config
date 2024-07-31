@@ -6,8 +6,8 @@ type Option = Exclude<Options['perfectionist'], false>
 
 /** @see {@link https://github.com/azat-io/eslint-plugin-perfectionist/blob/bf730c4343275878814b7f48757c06f4adc69ca5/index.ts#L26C1-L29C2} */
 interface PerfectionistOptions {
+  order: 'asc' | 'desc'
   type: 'alphabetical' | 'line-length' | 'natural'
-  order: 'desc' | 'asc'
 }
 
 /** @see {@link https://github.com/azat-io/eslint-plugin-perfectionist/blob/bf730c4343275878814b7f48757c06f4adc69ca5/index.ts#L38-L58} */
@@ -44,8 +44,12 @@ const getRules = (options: PerfectionistOptions): Linter.RulesRecord =>
 
 export const perfectionist = (type: Option): Linter.FlatConfig => ({
   name: 'importantimport/perfectionist/rules',
-  rules: getRules({
-    type,
-    order: type === 'line-length' ? 'desc' : 'asc'
-  }),
+  rules: {
+    'import/order': 'off',
+    'sort-imports': 'off',
+    ...getRules({
+      order: type === 'line-length' ? 'desc' : 'asc',
+      type,
+    }),
+  },
 })
