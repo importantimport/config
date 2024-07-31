@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": true
   }
 }

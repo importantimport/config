@@ -3,8 +3,8 @@ import eslintPluginPlugin from 'eslint-plugin-eslint-plugin'
 
 export default createConfig({
   typescript: {
-    tsconfigPath: 'tsconfig.json'
-  }
+    tsconfigPath: 'tsconfig.json',
+  },
 })
   .append({
     name: 'workspace/eslint-plugin/setup',
@@ -12,7 +12,7 @@ export default createConfig({
       'eslint-plugin': eslintPluginPlugin,
     },
   }, {
-    name: 'workspace/eslint-plugin/rules',
     files: ['./packages/eslint-config/**/*.ts'],
+    name: 'workspace/eslint-plugin/rules',
     rules: eslintPluginPlugin.configs.recommended.rules,
   })

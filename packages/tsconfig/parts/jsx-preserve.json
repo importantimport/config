@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "preserve"
   }
 }

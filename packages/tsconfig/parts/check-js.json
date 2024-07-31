@@ -2,6 +2,6 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": true
   }
 }
