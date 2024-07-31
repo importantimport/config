@@ -4,9 +4,9 @@
   "private": true,
   "packageManager": "pnpm@9.6.0",
   "scripts": {
-    "dev:eslint": "eslint-config-inspector",
     "build:eslint": "eslint-config-inspector build",
     "changeset": "changeset",
+    "dev:eslint": "eslint-config-inspector",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "release": "pnpm -r build && pnpm -r publish --no-git-checks --access public"

@@ -4,8 +4,8 @@ import eslintPluginPlugin from 'eslint-plugin-eslint-plugin'
 
 export default antfu({
   typescript: {
-    tsconfigPath: 'tsconfig.json'
-  }
+    tsconfigPath: 'tsconfig.json',
+  },
 })
   .append(ii())
   .append({
