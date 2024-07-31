@@ -3,13 +3,14 @@ import type { ResolvableFlatConfig } from 'eslint-flat-config-utils'
 
 import { defu } from 'defu'
 
-import { functional, perfectionist, sortPackageJsonScripts } from './configs'
-import { type Options, defaultOptions } from './options'
+import { disableAntfuTopLevelFunction, functional, perfectionist, sortPackageJsonScripts } from './configs'
+import { defaultOptions, type Options } from './options'
 
 export const ii = (userOptions: Partial<Options> = {}): ResolvableFlatConfig<Linter.FlatConfig> => {
   const options = defu(userOptions, defaultOptions)
 
   return [
+    disableAntfuTopLevelFunction,
     sortPackageJsonScripts,
     // ...(options.jsonc
     //   ? [sortPackageJsonScripts]
