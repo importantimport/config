@@ -45,7 +45,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.0",
     "@types/eslint": "^9.6.0",
-    "eslint": "^9.0.0",
-    "eslint-plugin-perfectionist": "^3.0.0"
+    "eslint": "^9.0.0"
   }
 }

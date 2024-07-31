@@ -80,9 +80,6 @@ importers:
       eslint:
         specifier: ^9.0.0
         version: 9.0.0
-      eslint-plugin-perfectionist:
-        specifier: ^3.0.0
-        version: 3.0.0(eslint@9.0.0)(typescript@5.4.4)(vue-eslint-parser@9.4.3(eslint@9.0.0))
 
   packages/tsconfig: {}
 
