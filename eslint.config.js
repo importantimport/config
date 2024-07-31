@@ -9,7 +9,10 @@ export default antfu({
 //     tsconfigPath: 'tsconfig.json',
 //   },
 })
-  .append(ii())
+  .append(ii({
+    // FIXME: enable functional when the bug above is fixed
+    functional: false,
+  }))
   .append({
     name: 'workspace/eslint-plugin/setup',
     plugins: {
