@@ -18,7 +18,7 @@ export const functional = (option: Exclude<Options['functional'], false>): Linte
     name: 'importantimport/functional/rules-javascript',
     rules: functionalPlugin.configs.externalVanillaRecommended.rules,
   },
-  // FIXME: use this when tsconfigPath is set 
+  // FIXME: use this when tsconfigPath is set
   // {
   //   files: [GLOB_TS, GLOB_TSX],
   //   name: 'importantimport/functional/rules-typescript',
