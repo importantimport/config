@@ -21,6 +21,7 @@
     "@types/node": "^22.0.0",
     "eslint": "^9.9.0",
     "eslint-plugin-eslint-plugin": "^6.2.0",
+    "jiti": "^1.21.6",
     "tsup": "^8.2.3"
   },
   "pnpm": {
