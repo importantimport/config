@@ -6,6 +6,7 @@
     "@importantimport/tsconfig": "0.1.0"
   },
   "changesets": [
+    "green-tomatoes-watch",
     "thick-dragons-joke"
   ]
 }
