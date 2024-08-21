@@ -30,8 +30,8 @@
     "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": "^2.24.0",
-    "eslint": "^9.8.0"
+    "@antfu/eslint-config": "^2.26.1",
+    "eslint": "^9.9.0"
   },
   "dependencies": {
     "defu": "^6.1.4",
@@ -39,8 +39,8 @@
     "eslint-plugin-functional": "^6.4.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.0",
+    "@antfu/eslint-config": "^2.26.1",
     "@types/eslint": "^9.6.0",
-    "eslint": "^9.8.0"
+    "eslint": "^9.9.0"
   }
 }
