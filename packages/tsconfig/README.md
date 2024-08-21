@@ -1,4 +1,4 @@
-# @importantimport/tsconfig
+# @importantimport/tsconfig [![npm](https://img.shields.io/npm/v/@importantimport/tsconfig)](https://npmjs.com/package/@importantimport/tsconfig)
 
 ## Usage
 
