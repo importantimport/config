@@ -1,7 +1,7 @@
 import type { ESLint, Linter } from 'eslint'
 
 // import { GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'
-import functionalPlugin from 'eslint-plugin-functional/flat'
+import functionalPlugin from 'eslint-plugin-functional'
 
 import type { Options } from '../options'
 
