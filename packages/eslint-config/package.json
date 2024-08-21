@@ -26,8 +26,8 @@
   "scripts": {
     "build": "tsup",
     "build:watch": "tsup --watch",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --flag unstable_ts_config",
+    "lint:fix": "eslint . --flag unstable_ts_config --fix"
   },
   "peerDependencies": {
     "@antfu/eslint-config": "^2.26.1",
