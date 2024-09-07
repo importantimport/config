@@ -30,8 +30,8 @@
     "lint:fix": "eslint . --flag unstable_ts_config --fix"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": "^2.26.1",
-    "eslint": "^9.9.0"
+    "@antfu/eslint-config": "^3.0.0",
+    "eslint": "^9.10.0"
   },
   "dependencies": {
     "defu": "^6.1.4",
