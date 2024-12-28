@@ -36,7 +36,8 @@
   "dependencies": {
     "defu": "^6.1.4",
     "eslint-flat-config-utils": "^0.4.0",
-    "eslint-plugin-functional": "^7.2.0"
+    "eslint-plugin-functional": "^7.2.0",
+    "eslint-plugin-perfectionist": "^4.4.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.12.1",

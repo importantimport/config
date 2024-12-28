@@ -67,6 +67,9 @@ importers:
       eslint-plugin-functional:
         specifier: ^7.2.0
         version: 7.2.0(eslint@9.17.0(jiti@2.4.2))(typescript@5.4.4)
+      eslint-plugin-perfectionist:
+        specifier: ^4.4.0
+        version: 4.4.0(eslint@9.17.0(jiti@2.4.2))(typescript@5.4.4)
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^3.12.1
@@ -4728,7 +4731,7 @@ snapshots:
   postcss@8.4.40:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.1.0
+      picocolors: 1.1.1
       source-map-js: 1.2.0
 
   prelude-ls@1.2.1: {}
