@@ -1,5 +1,11 @@
 # @importantimport/eslint-config
 
+## 1.0.0-alpha.3
+
+### Patch Changes
+
+- [`ba0f5b5`](https://github.com/importantimport/config/commit/ba0f5b592c83ffc7a5e72fdcee9c0f4bafc27f0d) Thanks [@kwaa](https://github.com/kwaa)! - Version 1.0.0-alpha.3
+
 ## 1.0.0-alpha.2
 
 ### Patch Changes
