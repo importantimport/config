@@ -5,7 +5,7 @@ import functionalPlugin from 'eslint-plugin-functional'
 
 import type { Options } from '../options'
 
-export const functional = (option: Exclude<Options['functional'], false>): Linter.FlatConfig[] => [
+export const functional = (option: Exclude<Options['functional'], false>): Linter.Config[] => [
   {
     name: 'importantimport/functional/setup',
     plugins: { functional: functionalPlugin as unknown as ESLint.Plugin },

@@ -5,7 +5,7 @@ import type { Linter } from 'eslint'
  *
  * Requires `jsonc` config
  */
-export const sortPackageJsonScripts: Linter.FlatConfig = {
+export const sortPackageJsonScripts: Linter.Config = {
   files: ['**/package.json'],
   name: 'importantimport/sort/package-json-scripts',
   rules: {
