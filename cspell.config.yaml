@@ -6,5 +6,6 @@ words:
   - defu
   - importantimport
   - masknet
+  - sonarjs
 ignoreWords: []
 import: []

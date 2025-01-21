@@ -4,7 +4,7 @@ import type { ResolvableFlatConfig } from 'eslint-flat-config-utils'
 import antfu, { type OptionsConfig as AntfuConfig } from '@antfu/eslint-config'
 import defu from 'defu'
 
-import { disableAntfuTopLevelFunction, masknet, perfectionist, sortPackageJsonScripts } from './configs'
+import { disableAntfuTopLevelFunction, masknet, sonarjs, perfectionist, sortPackageJsonScripts } from './configs'
 
 export interface IIConfig extends AntfuConfig {
   perfectionist: 'alphabetical' | 'line-length' | 'natural' | false
@@ -24,6 +24,7 @@ export const ii = (userOptions: Partial<IIConfig> = {}): ResolvableFlatConfig<Li
     disableAntfuTopLevelFunction,
     sortPackageJsonScripts,
     ...masknet,
+    ...sonarjs,
     ...(options.perfectionist
       ? [perfectionist(options.perfectionist)]
       : []
