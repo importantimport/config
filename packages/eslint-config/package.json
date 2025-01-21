@@ -28,19 +28,19 @@
     "build:watch": "tsup --watch"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": "^3.12.0",
-    "eslint": "^9.17.0"
+    "@antfu/eslint-config": "^3.14.0",
+    "eslint": "^9.18.0"
   },
   "dependencies": {
     "@masknet/eslint-plugin": "^0.3.0",
     "defu": "^6.1.4",
-    "eslint-flat-config-utils": "^0.4.0",
-    "eslint-plugin-perfectionist": "^4.4.0",
+    "eslint-flat-config-utils": "^1.0.0",
+    "eslint-plugin-perfectionist": "^4.7.0",
     "eslint-plugin-sonarjs": "^3.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.1",
+    "@antfu/eslint-config": "^3.14.0",
     "@types/eslint": "^9.6.1",
-    "eslint": "^9.17.0"
+    "eslint": "^9.18.0"
   }
 }
