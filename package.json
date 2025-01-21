@@ -2,7 +2,7 @@
   "name": "@importantimport/config",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@10.0.0",
   "scripts": {
     "build:eslint": "eslint-config-inspector build",
     "changeset": "changeset",
