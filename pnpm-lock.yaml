@@ -5,18 +5,11 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  array.prototype.flat: npm:@nolyfill/array.prototype.flat@latest
-  has: npm:@nolyfill/has@latest
-  array-includes: npm:@nolyfill/array-includes@latest
-  array.prototype.flatmap: npm:@nolyfill/array.prototype.flatmap@latest
-  array.prototype.tosorted: npm:@nolyfill/array.prototype.tosorted@latest
-  es-iterator-helpers: npm:@nolyfill/es-iterator-helpers@latest
-  object.assign: npm:@nolyfill/object.assign@latest
-  object.entries: npm:@nolyfill/object.entries@latest
-  object.fromentries: npm:@nolyfill/object.fromentries@latest
-  object.hasown: npm:@nolyfill/object.hasown@latest
-  object.values: npm:@nolyfill/object.values@latest
-  string.prototype.matchall: npm:@nolyfill/string.prototype.matchall@latest
+  array-includes: npm:@nolyfill/array-includes@^1
+  array.prototype.flat: npm:@nolyfill/array.prototype.flat@^1
+  is-core-module: npm:@nolyfill/is-core-module@^1
+  object.assign: npm:@nolyfill/object.assign@^1
+  object.values: npm:@nolyfill/object.values@^1
 
 importers:
 
@@ -1016,6 +1009,10 @@ packages:
     resolution: {integrity: sha512-bvBWaZDCWV7+jD70tJCy3Olp03Qx9svHN2KmC2j0CYvqfYRet5+iOb09nzb6QULqGrj7O8DQJ03ZQk6gih9J3g==}
     engines: {node: '>=12.4.0'}
 
+  '@nolyfill/is-core-module@1.0.39':
+    resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
+    engines: {node: '>=12.4.0'}
+
   '@nolyfill/object.assign@1.0.28':
     resolution: {integrity: sha512-rrtnXgU2XJvUF9jFMwRbyvLdAlCIJOKtecflza4xWDom6u8UPliTOS0OQ6kvhql7/hpv9b8x9p0s467BVY58xg==}
     engines: {node: '>=12.4.0'}
@@ -1881,9 +1878,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  function-bind@1.1.2:
-    resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
-
   functional-red-black-tree@1.0.1:
     resolution: {integrity: sha512-dsKNQNdj6xA3T+QlADDA7mOSlX0qiMINjn0cgr+eGHGsbSHzTabcIogz2+p/iqP1Xs6EP/sS2SbqH+brGTbq0g==}
 
@@ -1938,10 +1932,6 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  hasown@2.0.2:
-    resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
-    engines: {node: '>= 0.4'}
-
   hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
 
@@ -1970,9 +1960,6 @@ packages:
   is-builtin-module@3.2.1:
     resolution: {integrity: sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A==}
     engines: {node: '>=6'}
-
-  is-core-module@2.13.1:
-    resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
 
   is-docker@3.0.0:
     resolution: {integrity: sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ==}
@@ -3830,6 +3817,8 @@ snapshots:
     dependencies:
       '@nolyfill/shared': 1.0.28
 
+  '@nolyfill/is-core-module@1.0.39': {}
+
   '@nolyfill/object.assign@1.0.28':
     dependencies:
       '@nolyfill/shared': 1.0.28
@@ -4434,7 +4423,7 @@ snapshots:
   eslint-import-resolver-node@0.3.9:
     dependencies:
       debug: 3.2.7
-      is-core-module: 2.13.1
+      is-core-module: '@nolyfill/is-core-module@1.0.39'
       resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
@@ -4799,8 +4788,6 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  function-bind@1.1.2: {}
-
   functional-red-black-tree@1.0.1: {}
 
   gensync@1.0.0-beta.2: {}
@@ -4850,10 +4837,6 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hasown@2.0.2:
-    dependencies:
-      function-bind: 1.1.2
-
   hosted-git-info@2.8.9: {}
 
   ignore@5.3.2: {}
@@ -4874,10 +4857,6 @@ snapshots:
   is-builtin-module@3.2.1:
     dependencies:
       builtin-modules: 3.3.0
-
-  is-core-module@2.13.1:
-    dependencies:
-      hasown: 2.0.2
 
   is-docker@3.0.0: {}
 
@@ -5539,7 +5518,7 @@ snapshots:
 
   resolve@1.22.8:
     dependencies:
-      is-core-module: 2.13.1
+      is-core-module: '@nolyfill/is-core-module@1.0.39'
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
