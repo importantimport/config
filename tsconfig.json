@@ -1,6 +1,7 @@
 {
   "references": [
-    { "path": "./packages/eslint-config/tsconfig.json" }
+    { "path": "./packages/eslint-config/tsconfig.json" },
+    { "path": "./tsconfig.node.json" }
   ],
   "files": []
 }
