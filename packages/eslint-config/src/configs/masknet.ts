@@ -36,7 +36,7 @@ export const masknet: Linter.Config[] = [
       '@masknet/no-timer': 'error',
       '@masknet/no-top-level': 'error',
       '@masknet/prefer-default-export': 'warn',
-      '@masknet/prefer-defer-import': 'error',
+      // '@masknet/prefer-defer-import': 'error',
       '@masknet/prefer-early-return': 'warn',
       '@masknet/prefer-fetch': 'warn',
       '@masknet/prefer-timer-id': 'error',
