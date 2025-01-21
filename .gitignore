@@ -2,6 +2,7 @@
 dist
 dist-ssr
 *.local
+.eslintcache
 
 # npmrc
 .npmrc

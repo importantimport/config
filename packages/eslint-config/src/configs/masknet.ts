@@ -47,7 +47,7 @@ export const masknet = (config: IIConfig): Linter.Config[] => [
       '@masknet/string-no-locale-case': 'error',
       '@masknet/string-no-simple-template-literal': 'warn',
       '@masknet/type-no-const-enum': 'error',
-      '@masknet/type-no-empty-literal': 'error',
+      // '@masknet/type-no-empty-literal': 'error',
       '@masknet/type-no-force-cast-via-top-type': 'error',
       '@masknet/type-no-instanceof-wrapper': 'error',
       '@masknet/type-no-number-constructor': 'error',

@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-import type { ResolvableFlatConfig } from 'eslint-flat-config-utils'
 
 import antfu, { type OptionsConfig as AntfuConfig } from '@antfu/eslint-config'
 import defu from 'defu'
@@ -15,7 +14,7 @@ export const defaults: IIConfig = {
   typescript: true,
 }
 
-export const ii = (userOptions: Partial<IIConfig> = {}): ResolvableFlatConfig<Linter.Config> => {
+export const ii = (userOptions: Partial<IIConfig> = {}): Linter.Config[] => {
   const options: IIConfig = defu(userOptions as IIConfig, defaults)
 
   return [

@@ -20,7 +20,7 @@
     "@types/node": "^22.10.7",
     "eslint": "^9.18.0",
     "jiti": "^2.4.2",
-    "tsup": "^8.3.5"
+    "pkgroll": "^2.6.1"
   },
   "pnpm": {
     "overrides": {

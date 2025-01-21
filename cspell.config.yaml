@@ -1,11 +1,14 @@
-version: '0.2'
+version: "0.2"
 ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
   - defu
+  - eslintcache
   - importantimport
   - masknet
+  - mportant
+  - pkgroll
   - sonarjs
 ignoreWords: []
 import: []
