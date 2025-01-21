@@ -3,7 +3,7 @@ import type { Linter } from 'eslint'
 import antfu, { type OptionsConfig as AntfuConfig } from '@antfu/eslint-config'
 import defu from 'defu'
 
-import { disableAntfuTopLevelFunction, masknet, perfectionist, sonarjs, sortPackageJsonScripts } from './configs'
+import { disableAntfuTopLevelFunction, masknet, perfectionist, sonarjs, sortPackageJsonWithScripts } from './configs'
 
 export interface IIConfig extends AntfuConfig {
   perfectionist: 'alphabetical' | 'line-length' | 'natural' | false
@@ -19,7 +19,7 @@ export const ii = (userOptions: Partial<IIConfig> = {}): Linter.Config[] => {
 
   return [
     disableAntfuTopLevelFunction,
-    sortPackageJsonScripts,
+    sortPackageJsonWithScripts,
     ...masknet(options),
     ...sonarjs,
     ...(options.perfectionist !== false
