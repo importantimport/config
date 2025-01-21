@@ -8,24 +8,22 @@ import { disableAntfuTopLevelFunction, masknet, perfectionist, sonarjs, sortPack
 
 export interface IIConfig extends AntfuConfig {
   perfectionist: 'alphabetical' | 'line-length' | 'natural' | false
-  vanillaExtract: boolean
 }
 
 export const defaults: IIConfig = {
   perfectionist: 'natural',
-  typescript: { tsconfigPath: './tsconfig.json' },
-  vanillaExtract: false,
+  typescript: true,
 }
 
 export const ii = (userOptions: Partial<IIConfig> = {}): ResolvableFlatConfig<Linter.Config> => {
-  const options = defu(userOptions, defaults)
+  const options: IIConfig = defu(userOptions as IIConfig, defaults)
 
   return [
     disableAntfuTopLevelFunction,
     sortPackageJsonScripts,
-    ...masknet,
+    ...masknet(options),
     ...sonarjs,
-    ...(options.perfectionist
+    ...(options.perfectionist !== false
       ? [perfectionist(options.perfectionist)]
       : []
     ),

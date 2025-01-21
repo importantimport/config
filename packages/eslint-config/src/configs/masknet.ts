@@ -3,7 +3,9 @@ import type { Linter } from 'eslint'
 import { GLOB_ASTRO_TS, GLOB_MARKDOWN_CODE, GLOB_TS, GLOB_TSX } from '@antfu/eslint-config'
 import masknetPlugin from '@masknet/eslint-plugin'
 
-export const masknet: Linter.Config[] = [
+import type { IIConfig } from '..'
+
+export const masknet = (config: IIConfig): Linter.Config[] => [
   {
     name: 'importantimport/masknet/setup',
     plugins: {
@@ -57,14 +59,17 @@ export const masknet: Linter.Config[] = [
       'unicorn/no-instanceof-array': 'off',
     },
   },
-  {
-    files: [GLOB_TS, GLOB_TSX],
-    ignores: [GLOB_MARKDOWN_CODE, GLOB_ASTRO_TS],
-    name: 'importantimport/masknet/rules-type-aware',
-    rules: {
-      '@masknet/no-default-error': 'error',
-      '@masknet/no-unsafe-date': 'error',
-      '@masknet/string-no-unneeded-to-string': 'warn',
-    },
-  },
+  ...(typeof config.typescript === 'object' && 'tsconfigPath' in config.typescript
+    ? [{
+      files: [GLOB_TS, GLOB_TSX],
+      ignores: [GLOB_MARKDOWN_CODE, GLOB_ASTRO_TS],
+      name: 'importantimport/masknet/rules-type-aware',
+      rules: {
+        '@masknet/no-default-error': 'error',
+        '@masknet/no-unsafe-date': 'error',
+        '@masknet/string-no-unneeded-to-string': 'warn',
+      },
+    } satisfies Linter.Config]
+    : []
+  ),
 ] as const
