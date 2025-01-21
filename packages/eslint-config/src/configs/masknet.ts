@@ -13,6 +13,7 @@ export const masknet = (config: IIConfig): Linter.Config[] => [
     },
   },
   {
+    files: [GLOB_TS, GLOB_TSX],
     name: 'importantimport/masknet/rules',
     /**
      * @see {@link https://github.com/DimensionDev/eslint-plugin#usage}
