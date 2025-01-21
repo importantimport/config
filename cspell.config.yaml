@@ -1,8 +1,10 @@
-version: '0.2'
+version: "0.2"
 ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
   - defu
+  - importantimport
+  - masknet
 ignoreWords: []
 import: []
