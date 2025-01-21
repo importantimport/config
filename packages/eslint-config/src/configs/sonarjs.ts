@@ -6,11 +6,11 @@ export const sonarjs: Linter.Config[] = [
   {
     name: 'importantimport/sonarjs/setup',
     plugins: {
-      'sonarjs': sonarjsPlugin
+      sonarjs: sonarjsPlugin,
     },
   },
   {
     name: 'importantimport/sonarjs/rules',
-    rules: sonarjsPlugin.configs.recommended.rules
-  }
+    rules: (sonarjsPlugin.configs.recommended as Linter.Config).rules,
+  },
 ] as const
