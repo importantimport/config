@@ -5,6 +5,7 @@
   "packageManager": "pnpm@10.0.0",
   "scripts": {
     "build:eslint": "eslint-config-inspector build",
+    "bump": "bumpp",
     "changeset": "changeset",
     "dev:eslint": "eslint-config-inspector",
     "lint": "eslint --cache .",
@@ -16,6 +17,7 @@
     "@importantimport/eslint-config": "workspace:*",
     "@importantimport/tsconfig": "workspace:*",
     "@types/node": "^22.10.7",
+    "bumpp": "^9.10.1",
     "eslint": "^9.18.0",
     "jiti": "^2.4.2",
     "pkgroll": "^2.6.1"
