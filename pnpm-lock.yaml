@@ -51,6 +51,9 @@ importers:
       defu:
         specifier: ^6.1.4
         version: 6.1.4
+      eslint-plugin-de-morgan:
+        specifier: ^1.1.0
+        version: 1.1.0(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-perfectionist:
         specifier: ^4.9.0
         version: 4.9.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.4.4)
@@ -1073,6 +1076,12 @@ packages:
     resolution: {integrity: sha512-KLgxB8NMQ0iL7iwehyeqWVE7MaqRPwLTGW4d2CXYOj5tt4j6yU/hiNxQ/35FLq4SnMhv+tpE6FCvYbV4VS+BLw==}
     peerDependencies:
       eslint: '*'
+
+  eslint-plugin-de-morgan@1.1.0:
+    resolution: {integrity: sha512-68nLDXi9EJtD/8q7JrTbzbpBp3CIePTLfLQFkDivj8OHzscQeT7g2RKkNqmy5sgMDZXN6saS6npfBXsnZkvWIA==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      eslint: '>=8.0.0'
 
   eslint-plugin-es-x@7.8.0:
     resolution: {integrity: sha512-7Ds8+wAAoV3T+LAKeu39Y5BzXCrGKrcISfgKEqTS4BDN8SFEDQd0S43jiQ8vIa3wUKD07qitZdfzlenSi8/0qQ==}
@@ -3074,6 +3083,10 @@ snapshots:
   eslint-plugin-command@3.1.0(eslint@9.21.0(jiti@2.4.2)):
     dependencies:
       '@es-joy/jsdoccomment': 0.50.0
+      eslint: 9.21.0(jiti@2.4.2)
+
+  eslint-plugin-de-morgan@1.1.0(eslint@9.21.0(jiti@2.4.2)):
+    dependencies:
       eslint: 9.21.0(jiti@2.4.2)
 
   eslint-plugin-es-x@7.8.0(eslint@9.21.0(jiti@2.4.2)):
