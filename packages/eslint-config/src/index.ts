@@ -29,4 +29,5 @@ export const ii = (userOptions: Partial<IIConfig> = {}): Linter.Config[] => {
   ]
 }
 
-export const defineConfig = async (userOptions: Partial<IIConfig> = {}) => antfu(userOptions).append(ii(userOptions))
+export const defineConfig = async (userOptions: Partial<IIConfig> = {}) =>
+  antfu(userOptions, ii(userOptions))
