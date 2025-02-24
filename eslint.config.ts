@@ -4,4 +4,6 @@ export default defineConfig({
   typescript: {
     tsconfigPath: './tsconfig.json',
   },
+}, {
+  ignores: ['cspell.config.yaml'],
 })

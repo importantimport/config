@@ -1,6 +1,7 @@
+import type { OptionsConfig as AntfuConfig } from '@antfu/eslint-config'
 import type { Linter } from 'eslint'
 
-import antfu, { type OptionsConfig as AntfuConfig } from '@antfu/eslint-config'
+import antfu from '@antfu/eslint-config'
 import defu from 'defu'
 
 import { disableAntfuTopLevelFunction, masknet, perfectionist, sonarjs, sortPackageJsonWithScripts } from './configs'
@@ -31,5 +32,5 @@ export const ii = (userOptions: Partial<IIConfig> = {}): Linter.Config[] => {
   ]
 }
 
-export const defineConfig = async (userOptions: Partial<IIConfig> = {}) =>
-  antfu(userOptions, ii(userOptions))
+export const defineConfig = async (userOptions: Partial<IIConfig> = {}, userConfigs?: Parameters<typeof antfu>[2]) =>
+  antfu(userOptions, ii(userOptions), userConfigs ?? {})
