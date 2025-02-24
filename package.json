@@ -12,23 +12,23 @@
     "release": "pnpm -r build && pnpm -r publish --no-git-checks --access public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.14.0",
+    "@antfu/eslint-config": "^4.3.0",
     "@eslint/config-inspector": "^1.0.0",
     "@importantimport/eslint-config": "workspace:*",
     "@importantimport/tsconfig": "workspace:*",
-    "@types/node": "^22.10.7",
-    "bumpp": "^9.10.1",
-    "eslint": "^9.18.0",
+    "@types/node": "^22.13.5",
+    "bumpp": "^10.0.3",
+    "eslint": "^9.21.0",
     "jiti": "^2.4.2",
-    "pkgroll": "^2.6.1"
+    "pkgroll": "^2.11.0"
   },
   "pnpm": {
     "overrides": {
-      "array-includes": "npm:@nolyfill/array-includes@^1",
-      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@^1",
-      "is-core-module": "npm:@nolyfill/is-core-module@^1",
-      "object.assign": "npm:@nolyfill/object.assign@^1",
-      "object.values": "npm:@nolyfill/object.values@^1"
+      "array-includes": "npm:@nolyfill/array-includes@^1.0.28",
+      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@^1.0.28",
+      "is-core-module": "npm:@nolyfill/is-core-module@^1.0.39",
+      "object.assign": "npm:@nolyfill/object.assign@^1.0.28",
+      "object.values": "npm:@nolyfill/object.values@^1.0.28"
     }
   }
 }

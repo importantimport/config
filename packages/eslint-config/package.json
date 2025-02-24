@@ -34,12 +34,12 @@
   "dependencies": {
     "@masknet/eslint-plugin": "^0.3.0",
     "defu": "^6.1.4",
-    "eslint-plugin-perfectionist": "^4.7.0",
-    "eslint-plugin-sonarjs": "^3.0.1"
+    "eslint-plugin-perfectionist": "^4.9.0",
+    "eslint-plugin-sonarjs": "^3.0.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.14.0",
+    "@antfu/eslint-config": "^4.3.0",
     "@types/eslint": "^9.6.1",
-    "eslint": "^9.18.0"
+    "eslint": "^9.21.0"
   }
 }
