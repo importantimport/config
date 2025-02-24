@@ -26,31 +26,6 @@ export default antfu()
 +  .append(ii())
 ```
 
-### TypeScript Config (optional)
-
-Rename your `eslint.config.js` to `eslint.config.ts` and set the flag for scripts and vscode:
-
-```diff
-# package.json
-{
-  "scripts": {
--   "lint": "eslint .",
-+   "lint": "eslint . --flag unstable_ts_config",
--   "lint:fix": "eslint . --fix"
-+   "lint:fix": "eslint . --flag unstable_ts_config --fix"
-  },
-}
-```
-
-```diff
-# .vscode/settings.json
-{
-+ "eslint.options": {
-+   "flags": ["unstable_ts_config"]
-+ }
-}
-```
-
 ## License
 
 [MIT](../../LICENSE.md)

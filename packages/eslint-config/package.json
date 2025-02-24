@@ -27,9 +27,8 @@
     "build": "pkgroll"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": "^3.14.0",
-    "@types/eslint": "^9.6.1",
-    "eslint": "^9.18.0"
+    "@antfu/eslint-config": "^4.3.0",
+    "eslint": "^9.21.0"
   },
   "dependencies": {
     "@masknet/eslint-plugin": "^0.3.0",
@@ -40,7 +39,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.3.0",
-    "@types/eslint": "^9.6.1",
     "eslint": "^9.21.0"
   }
 }
